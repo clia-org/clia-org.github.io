@@ -1,10 +1,12 @@
 # CLIA Org
 
+Brand note: Keep pages crisp, structured, and navigable.
+
 @Metadata {
   @PageKind(article)
-  @PageColor(blue)
+  @PageColor(orange)
   @TechnologyRoot
-  @TitleHeading("Agentic Frameworks")
+  @TitleHeading("Agent System")
   @PageImage(purpose: icon, source: "index-icon", alt: "CLIA Icon")
   @PageImage(purpose: card, source: "index-card", alt: "CLIA Card")
 }
@@ -14,7 +16,7 @@
   @AutomaticSeeAlso(disabled)
 }
 
-Human-centered automation and agent orchestration.
+Local-first agent orchestration — crisp, structured, and command-line chic.
 
 ## Overview
 
