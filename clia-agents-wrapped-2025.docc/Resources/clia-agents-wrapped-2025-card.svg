@@ -1,0 +1,27 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Background Pattern -->
+<text x="50" y="100" fill="#333" font-family="monospace" font-size="24" opacity="0.3">$ sync</text>
+<text x="900" y="200" fill="#333" font-family="monospace" font-size="24" opacity="0.3">{ "role": "codex" }</text>
+<text x="100" y="500" fill="#333" font-family="monospace" font-size="24" opacity="0.3">Triad.Normalize</text>
+<text x="800" y="550" fill="#333" font-family="monospace" font-size="24" opacity="0.3">CommonShell</text>
+
+<!-- Main Text -->
+<text x="600" y="300" fill="#FFFFFF" font-family="monospace" font-weight="bold" font-size="120" text-anchor="middle">CLIA</text>
+<text x="600" y="420" fill="url(#grad1)" font-family="monospace" font-weight="bold" font-size="60" text-anchor="middle">2025 WRAPPED</text>
+
+<!-- Decor -->
+<path d="M100 315 H1100" stroke="#333" stroke-width="2"/>
+<circle cx="600" cy="315" r="250" stroke="url(#grad2)" stroke-width="4" stroke-dasharray="20 20"/>
+
+<defs>
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#89F94F;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#A378F2;stop-opacity:1" />
+</linearGradient>
+<linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#FFFC67;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#FF8EC6;stop-opacity:1" />
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+  <defs>
+    <style>
+      .title { font-family: "SF Pro Text", "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 700; fill: #2b2118; }
+      .subtitle { font-family: "SF Pro Text", "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #6b5a4a; letter-spacing: 0.08em; }
+      .label { font-family: "SF Pro Text", "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #2b2118; }
+      .small { font-family: "SF Pro Text", "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #6b5a4a; }
+    </style>
+  </defs>  <rect x="0" y="0" width="520" height="520" rx="28" fill="#fbf4e8" stroke="#d8c7b3" stroke-width="3"/>
+  <text x="48" y="56" class="subtitle">MAX STAT RING</text>
+  <text x="48" y="90" class="title">AGENT-PROFILE</text>
+  <circle cx="260" cy="260" r="160.0" fill="none" stroke="#eadfce" stroke-width="26.0"/>
+  <circle cx="260" cy="260" r="160.0" fill="none" stroke="#c05b2b" stroke-width="26.0" stroke-linecap="round" stroke-dasharray="402.1238596594935 1005.3096491487338" transform="rotate(-90 260 260)"/>
+  <text x="220" y="268" class="title">2</text>
+  <text x="210" y="294" class="small">MAX STAT</text>
+  <text x="248" y="328" class="small">/ 5</text></svg>

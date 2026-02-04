@@ -1,0 +1,161 @@
+# CLIA 2025 Wrapped
+
+Your year in the command line. From `$sync` to Schema 0.4.0, here is how you orchestrated the machine.
+
+@Metadata {
+    @TechnologyRoot
+    @PageImage(purpose: icon, source: "clia-agents-wrapped-2025-icon.svg")
+    @PageImage(purpose: card, source: "clia-agents-wrapped-2025-card.svg")
+}
+
+## The Vibe Check
+
+2025 wasn't just about writing code; it was about **defining the soul of the machine**. You moved from "scripts" to **Typed CLIs**, from "folders" to **Triads**, and from "running tasks" to **Orchestrating Agents**.
+
+> "Advance rapidly, but only in deliberate, incremental strides." — *The Meta³ Mantra*
+
+### Your Top Genre: "Typed Infrastructure"
+
+You spent 80% of your time in the **Infrastructure** genre. You didn't just build apps; you built the *factory* that builds the apps.
+
+- **Top Hit:** `clia core triads normalize` (played 4,000 times*)
+- **Breakout Single:** `CommonShell` (feat. No More Foundation.Process)
+- **Mood:** Deterministic & Type-Safe.
+
+> *Estimated based on how much we talk about normalization.*
+
+---
+
+## The Main Characters
+
+You curated a roster of 15+ agents. Here is who stole the show.
+
+### Command and Operations
+
+@Links(visualStyle: compactGrid) {
+    - <doc:clia-the-interface>
+    - <doc:rismay-the-operator>
+}
+
+### Program Management
+
+@Links(visualStyle: compactGrid) {
+    - <doc:cadence-the-metronome>
+    - <doc:tempo-the-compiler>
+}
+
+### Documentation and Writing
+
+@Links(visualStyle: compactGrid) {
+    - <doc:carrie-the-scribe>
+    - <doc:quill-the-storyteller>
+}
+
+### Design
+
+@Links(visualStyle: compactGrid) {
+    - <doc:castor-the-designer>
+}
+
+### Engineering and Tooling
+
+@Links(visualStyle: compactGrid) {
+    - <doc:codex-the-architect>
+    - <doc:dott-the-engineer>
+}
+
+### Platform and Infrastructure
+
+@Links(visualStyle: compactGrid) {
+    - <doc:cloud-the-infrastructure>
+    - <doc:common-the-foundation>
+}
+
+### Product
+
+@Links(visualStyle: compactGrid) {
+    - <doc:tau-the-product>
+}
+
+### Release and Response
+
+@Links(visualStyle: compactGrid) {
+    - <doc:patch-the-responder>
+}
+
+---
+
+## Your Year in Stats
+
+| Metric | Score | Analysis |
+| :--- | :--- | :--- |
+| **Directives Issued** | **$sync** | You really like reloading context. |
+| **Schemas Upgraded** | **0.3 → 0.4** | The "Triad" era begins. |
+| **Files Moved** | **∞** | The Great `.clia/` Migration of October. |
+| **Incidents** | **Managed** | Patch closed loops faster than you opened them. |
+
+### The "Oh No" Moment
+*Remember when we renamed `SwiftShell` to `CommonShell` and broke the build for 3 days?*
+We laughed. We cried. We added a `no-op` wrapper. Good times.
+
+---
+
+## The Eras
+
+@Row {
+    @Column {
+        ### Q1–Q2: The "Mono" Era
+        We lived in `code/mono`. We built `Trader`. We validated the "One Repo to Rule Them All" hypothesis.
+    }
+    
+    @Column {
+        ### Q3: The "Agent" Era
+        `.clia/agents/` was born. We stopped writing TODOs and started writing **Mandates**. `Codex` woke up.
+    }
+    
+    @Column {
+        ### Q4: The "Triad" Era
+        Schema 0.4.0. Agent, Agency, Agenda. JSON became our love language.
+    }
+}
+
+---
+
+## Topics
+
+### Main Characters
+
+- <doc:clia-the-interface>
+- <doc:rismay-the-operator>
+- <doc:cadence-the-metronome>
+- <doc:tempo-the-compiler>
+- <doc:carrie-the-scribe>
+- <doc:quill-the-storyteller>
+- <doc:castor-the-designer>
+- <doc:codex-the-architect>
+- <doc:dott-the-engineer>
+- <doc:cloud-the-infrastructure>
+- <doc:common-the-foundation>
+- <doc:tau-the-product>
+- <doc:patch-the-responder>
+
+### Stats
+
+- <doc:stats>
+
+### Archives
+
+- <doc:top-100-commits>
+- <doc:the-lost-logs>
+
+---
+
+## Thank You for Playing
+
+2025 was the year the CLI woke up. 
+**See you in 2026.**
+
+@Links(visualStyle: list) {
+    - <doc:top-100-commits>
+    - <doc:the-lost-logs>
+}

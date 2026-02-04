@@ -1,0 +1,7 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M100 100 L1100 530" stroke="#89F94F" stroke-width="2" opacity="0.2"/>
+<path d="M1100 100 L100 530" stroke="#89F94F" stroke-width="2" opacity="0.2"/>
+<text x="600" y="315" fill="#89F94F" font-family="monospace" font-weight="bold" font-size="80" text-anchor="middle">CODEX</text>
+<text x="600" y="400" fill="#89F94F" font-family="monospace" font-size="30" text-anchor="middle">THE ARCHITECT</text>
+</svg>

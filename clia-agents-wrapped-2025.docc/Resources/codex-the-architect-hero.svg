@@ -1,0 +1,21 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Blueprint Grid -->
+<defs>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#333" stroke-width="1"/>
+</pattern>
+</defs>
+
+
+<!-- Architect Elements -->
+<rect x="400" y="100" width="400" height="200" stroke="#89F94F" stroke-width="4"/>
+<circle cx="400" cy="100" r="10" fill="#89F94F"/>
+<circle cx="800" cy="100" r="10" fill="#89F94F"/>
+<circle cx="400" cy="300" r="10" fill="#89F94F"/>
+<circle cx="800" cy="300" r="10" fill="#89F94F"/>
+<path d="M400 100 L800 300" stroke="#89F94F" stroke-width="2" stroke-dasharray="10 10"/>
+<path d="M800 100 L400 300" stroke="#89F94F" stroke-width="2" stroke-dasharray="10 10"/>
+
+<text x="600" y="360" fill="#89F94F" font-family="monospace" font-size="20" text-anchor="middle">CODEX // SYSTEM_ARCHITECT</text>
+</svg>

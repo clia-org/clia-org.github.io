@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
+  <rect x="0" y="0" width="960" height="360" rx="24" fill="#f7efe2" stroke="#cbb89c" stroke-width="3"/>
+  <text x="40" y="48" font-family="SF Pro Text, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#2b2118">CODEX S-TYPE MAP — CHIPS</text>
+  <rect x="60" y="110" width="220" height="80" rx="16" fill="#fffdf8" stroke="#cbb89c" stroke-width="2"/>
+  <text x="90" y="158" font-family="SF Pro Text, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#2b2118">MIX</text>
+
+  <rect x="360" y="80" width="200" height="70" rx="16" fill="#e3f2dd" stroke="#4b8e5a" stroke-width="2"/>
+  <text x="380" y="122" font-family="SF Pro Text, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#2b2118">SYNERGIZES</text>
+
+  <rect x="360" y="170" width="200" height="70" rx="16" fill="#f4edd6" stroke="#b68b2e" stroke-width="2"/>
+  <text x="380" y="212" font-family="SF Pro Text, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#2b2118">STABILIZES</text>
+
+  <rect x="360" y="260" width="200" height="70" rx="16" fill="#f9e0d6" stroke="#c05b2b" stroke-width="2"/>
+  <text x="386" y="302" font-family="SF Pro Text, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#2b2118">STRAINS</text>
+
+  <line x1="280" y1="150" x2="360" y2="115" stroke="#2b2118" stroke-width="2"/>
+  <line x1="280" y1="150" x2="360" y2="205" stroke="#2b2118" stroke-width="2"/>
+  <line x1="280" y1="150" x2="360" y2="295" stroke="#2b2118" stroke-width="2"/>
+</svg>

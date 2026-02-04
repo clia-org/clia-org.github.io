@@ -64,4 +64,4 @@ Mental model:
 
 - [openclaw-swift](../../local/openclaw-swift.docc/index.md)
 - [openclaw-runtime](../../local/openclaw-runtime.docc/index.md)
-- [clia-agents-wrapped-2025](../../local/clia-agents-wrapped-2025.docc/index.md)
+- [CLIA 2025 Wrapped](/documentation/clia-agents-wrapped-2025)
