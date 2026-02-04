@@ -25,7 +25,8 @@ CLIA (Command Line Interface Agent) is a platform for building, managing, and co
 ### Ecosystem
 
 - **CLIA Agent**: The core agentic engine.
-- **Triads**: Governance and agency modeling for agent ecosystems.
+- **Triads**: Governance and agency modeling for agent ecosystems. (See: <doc:triads>)
+- **S‑Type System**: Behavioral modes for operating posture and guardrails. (See: <doc:s-type-system>)
 - **Workflow**: Automated build and deployment pipelines.
 
 ### CLIA Architecture
