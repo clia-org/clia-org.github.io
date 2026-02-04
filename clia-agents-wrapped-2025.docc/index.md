@@ -1,6 +1,14 @@
-# CLIA 2025 Wrapped
+# CLIA Org
 
-Your year in the command line. From `$sync` to Schema 0.4.0, here is how you orchestrated the machine.
+A local-first, agentic operating system for software teams — designed to run as an **autonomous GitHub organization**.
+
+CLIA is the command line where:
+
+- issues become incidents
+- repos become workspaces
+- and automation becomes a governed system (not a black box)
+
+Built on the broader ecosystem: [Swift Universal](https://swift-universal.github.io/documentation/swift-universal).
 
 @Metadata {
     @TechnologyRoot
@@ -8,7 +16,16 @@ Your year in the command line. From `$sync` to Schema 0.4.0, here is how you orc
     @PageImage(purpose: card, source: "clia-agents-wrapped-2025-card.svg")
 }
 
-Built on the broader ecosystem: [Swift Universal](https://swift-universal.github.io/documentation/swift-universal).
+## Architecture
+
+How the system stays legible and safe while still moving fast:
+
+- <doc:triads>
+- <doc:s-type-system>
+
+## 2025 Wrapped
+
+The story of the year — the people, the tools, and the moments.
 
 ## The Vibe Check
 
@@ -123,12 +140,8 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 
 ---
 
-## Architecture
+## Key Moments Timeline
 
-The system behind the story.
-
-- <doc:triads>
-- <doc:s-type-system>
 - <doc:key-moments-timeline>
 
 ## Topics
