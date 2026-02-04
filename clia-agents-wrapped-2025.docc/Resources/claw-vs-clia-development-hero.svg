@@ -10,6 +10,7 @@
       .tiny { fill: rgba(255,255,255,0.55); font: 14px ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial; }
       .claw { stroke: #7c5cff; stroke-width: 6; fill: none; }
       .clia { stroke: #00d4ff; stroke-width: 6; fill: none; }
+      .codex { stroke: #ffb020; stroke-width: 6; fill: none; }
       .dash { stroke-dasharray: 8 8; }
       .point { fill: #ffffff; }
       .tag { fill: rgba(255,255,255,0.12); stroke: rgba(255,255,255,0.22); stroke-width: 1; }
@@ -67,6 +68,9 @@
     <!-- CLIA: slow across floor, then rise to meet -->
     <path class="clia" d="M 0 360 L 420 360 L 480 80"/>
 
+    <!-- Codex: reached mid-journey, then holds level until convergence -->
+    <path class="codex" d="M 240 80 L 480 80"/>
+
     <!-- meeting point -->
     <circle class="point" cx="480" cy="80" r="7"/>
 
@@ -83,6 +87,12 @@
       <text class="small" x="14" y="52">"straight up"</text>
     </g>
 
+    <g transform="translate(260,118)">
+      <rect class="tag" x="0" y="0" width="220" height="56" rx="12"/>
+      <text class="label" x="14" y="26">Codex</text>
+      <text class="small" x="14" y="46">holds level</text>
+    </g>
+
     <g transform="translate(88,300)">
       <rect class="tag" x="0" y="0" width="330" height="82" rx="12"/>
       <text class="label" x="14" y="30">CLIA</text>
@@ -91,12 +101,14 @@
     </g>
 
     <!-- legend -->
-    <g transform="translate(680,8)">
-      <rect class="tag" x="0" y="0" width="280" height="58" rx="12"/>
-      <line class="claw" x1="16" y1="22" x2="58" y2="22"/>
-      <text class="small" x="72" y="27">OpenClaw progress</text>
-      <line class="clia" x1="16" y1="42" x2="58" y2="42"/>
-      <text class="small" x="72" y="47">CLIA progress</text>
+    <g transform="translate(640,8)">
+      <rect class="tag" x="0" y="0" width="320" height="78" rx="12"/>
+      <line class="claw" x1="16" y1="24" x2="58" y2="24"/>
+      <text class="small" x="72" y="29">OpenClaw progress</text>
+      <line class="clia" x1="16" y1="46" x2="58" y2="46"/>
+      <text class="small" x="72" y="51">CLIA progress</text>
+      <line class="codex" x1="16" y1="68" x2="58" y2="68"/>
+      <text class="small" x="72" y="73">Codex level</text>
     </g>
   </g>
 
