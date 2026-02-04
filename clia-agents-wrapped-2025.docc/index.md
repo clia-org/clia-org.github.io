@@ -23,7 +23,15 @@ Built on the broader ecosystem: [Swift Universal](https://swift-universal.github
 
 ## Getting Started
 
-- <doc:getting-started>
+### Install `clia-agent-cli` (from source)
+
+```bash
+git clone https://github.com/clia-org/clia-agent-cli.git
+cd clia-agent-cli
+swift build
+```
+
+- More: <doc:getting-started>
 
 ## Architecture
 
