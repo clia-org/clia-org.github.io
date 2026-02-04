@@ -28,7 +28,7 @@ While we can't list all 100 here, these were the ones that changed the course of
 ## The Commits
 
 - **Add SPM launchpad for Gemini agent and update automation policy** (2025-12-30) - Cristian A Monterroza
-- **feat: update code/mono submodule with CommonSwift brand identity** (2025-12-30) - Cristian A Monterroza
+- **feat: update code/mono submodule with CommonSwift branding** (2025-12-30) - Cristian A Monterroza
 - **feat: add gemini-sessions submodule** (2025-12-30) - Cristian A Monterroza
 - **Standardize ritual directives and update Gemini agent role** (2025-12-30) - Cristian A Monterroza
 - **Update agent journals and logs for DocC preview fixes** (2025-12-29) - Cristian A Monterroza
