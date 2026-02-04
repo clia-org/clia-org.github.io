@@ -16,6 +16,12 @@ Built on the broader ecosystem: [Swift Universal](https://swift-universal.github
     @PageImage(purpose: card, source: "clia-agents-wrapped-2025-card.svg")
 }
 
+## Website
+
+How we want CLIA Org to look and read:
+
+- <doc:brand-identity>
+
 ## Architecture
 
 How the system stays legible and safe while still moving fast:
@@ -165,6 +171,10 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 ### Stats
 
 - <doc:stats>
+
+### Website
+
+- <doc:brand-identity>
 
 ### Architecture
 
