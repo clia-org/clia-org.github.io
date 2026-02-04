@@ -24,22 +24,32 @@ This page is a map of the repos, packages, and documentation that make up the sy
 
 ## Libraries and packages (selected)
 
-These are the reusable building blocks that make the system real:
+These are the reusable building blocks that make the system real.
 
-### Swift Universal
+### Swift Universal (system foundations)
 
-- `common-process`
-- `common-shell`
-- `common-cli`
-- `common-log`
+- `common-process` — process execution
+- `common-shell` — shell ergonomics + scripting helpers
+- `common-cli` — CLI primitives
+- `common-log` — logging
 
-### Wrkstrm / Tooling
+### Wrkstrm / Tooling (developer surface)
 
-- `any-language-model`
-- `swift-cli-kit`
-- `configs`
-- `swift-figlet-kit`
-- `wrkstrm-foundation`, `wrkstrm-main`, `wrkstrm-networking`, `wrkstrm-performance`, `wrkstrm-color`, `wrkstrm-emoji`
+- `any-language-model` — model abstraction layer
+- `swift-cli-kit` — CLIs as composable building blocks
+- `configs` — shared configs (linting/workflows/tool defaults)
+- `swift-figlet-kit` — ASCII/figlet rendering
+- system libraries: `wrkstrm-foundation`, `wrkstrm-main`, `wrkstrm-networking`, `wrkstrm-performance`, `wrkstrm-color`, `wrkstrm-emoji`
+
+## Scale (repo stats)
+
+A rough view of the surface area inside the `mono` workspace (counted from the repo tree):
+
+- **Swift source files:** ~11,656 (`orgs/**/Sources/**/*.swift`)
+- **Swift test files:** ~5,770 (`orgs/**/Tests/**/*.swift`)
+- **Key text/config artifacts:** ~36,882 (`*.swift`, `*.md`, `*.yml|yaml`, `*.json` under `orgs/`)
+
+These numbers are intentionally coarse — they’re here to communicate scope, not precision.
 
 ## What this represents
 
