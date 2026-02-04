@@ -36,31 +36,11 @@ How the system stays legible and safe while still moving fast:
 
 ## 2025 Wrapped
 
-The story of the year — the people, the tools, and the moments.
-
-## The Vibe Check
-
-2025 wasn't just about writing code; it was about **defining the soul of the machine**. You moved from "scripts" to **Typed CLIs**, from "folders" to **Triads**, and from "running tasks" to **Orchestrating Agents**.
-
-> "Advance rapidly, but only in deliberate, incremental strides." — *The Meta³ Mantra*
-
-### Your Top Genre: "Typed Infrastructure"
-
-You spent 80% of your time in the **Infrastructure** genre. You didn't just build apps; you built the *factory* that builds the apps.
-
-- **Top Hit:** `clia core triads normalize` (played 4,000 times*)
-- **Breakout Single:** `CommonShell` (feat. No More Foundation.Process)
-- **Mood:** Deterministic & Type-Safe.
-
-> *Estimated based on how much we talk about normalization.*
-
----
-
-## The Main Characters
-
-You curated a roster of 15+ agents. Here is who stole the show.
-
+- <doc:overview>
 - <doc:roster>
+- <doc:stats>
+- <doc:top-100-commits>
+- <doc:the-lost-logs>
 
 ---
 
@@ -118,16 +98,11 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 - <doc:s-type-system>
 - <doc:key-moments-timeline>
 
-### Main Characters
+### 2025 Wrapped
 
+- <doc:overview>
 - <doc:roster>
-
-### Stats
-
 - <doc:stats>
-
-### Archives
-
 - <doc:top-100-commits>
 - <doc:the-lost-logs>
 
