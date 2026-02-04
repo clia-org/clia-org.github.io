@@ -102,16 +102,6 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 
 ## Topics
 
-### Main Characters
-
-- <doc:roster>
-
-### Stats
-
-- <doc:stats>
-
-<!-- -->
-
 ### Architecture
 
 - <doc:scope-of-work>
@@ -120,6 +110,14 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 - <doc:triads>
 - <doc:s-type-system>
 - <doc:key-moments-timeline>
+
+### Main Characters
+
+- <doc:roster>
+
+### Stats
+
+- <doc:stats>
 
 ### Archives
 
