@@ -46,7 +46,13 @@ Typical flow:
 - When writing docs about *governance and system structure*: link **CLIA** topics.
 - When writing docs about *runtime behavior and integrations*: link **OpenClaw** docs.
 
-See also:
+## Topics
+
+### Claw vs CLIA
+
+- <doc:claw-vs-clia-development>
+
+### CLIA Architecture
 
 - <doc:triads>
 - <doc:s-type-system>
