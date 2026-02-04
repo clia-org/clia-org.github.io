@@ -54,58 +54,7 @@ You spent 80% of your time in the **Infrastructure** genre. You didn't just buil
 
 You curated a roster of 15+ agents. Here is who stole the show.
 
-### Command and Operations
-
-@Links(visualStyle: compactGrid) {
-    - <doc:clia-the-interface>
-    - <doc:rismay-the-operator>
-}
-
-### Program Management
-
-@Links(visualStyle: compactGrid) {
-    - <doc:cadence-the-metronome>
-    - <doc:tempo-the-compiler>
-}
-
-### Documentation and Writing
-
-@Links(visualStyle: compactGrid) {
-    - <doc:carrie-the-scribe>
-    - <doc:quill-the-storyteller>
-}
-
-### Design
-
-@Links(visualStyle: compactGrid) {
-    - <doc:castor-the-designer>
-}
-
-### Engineering and Tooling
-
-@Links(visualStyle: compactGrid) {
-    - <doc:codex-the-architect>
-    - <doc:dott-the-engineer>
-}
-
-### Platform and Infrastructure
-
-@Links(visualStyle: compactGrid) {
-    - <doc:cloud-the-infrastructure>
-    - <doc:common-the-foundation>
-}
-
-### Product
-
-@Links(visualStyle: compactGrid) {
-    - <doc:tau-the-product>
-}
-
-### Release and Response
-
-@Links(visualStyle: compactGrid) {
-    - <doc:patch-the-responder>
-}
+- <doc:roster>
 
 ---
 
