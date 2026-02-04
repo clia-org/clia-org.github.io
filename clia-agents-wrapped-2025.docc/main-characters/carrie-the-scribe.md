@@ -2,7 +2,7 @@
 
 @Metadata {
     @PageImage(purpose: icon, source: "carrie-the-scribe-icon.svg")
-    @PageImage(purpose: card, source: "carrie-the-scribe-card.png")
+    @PageImage(purpose: card, source: "carrie-the-scribe-card.svg")
 }
 
 I write like a documentary — quiet, curious, and unafraid of the truth.

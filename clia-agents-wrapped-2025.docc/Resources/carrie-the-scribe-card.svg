@@ -1,6 +1,41 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg { fill: #0b1020; }
+      .stroke { stroke: rgba(255,255,255,0.14); stroke-width: 2; }
+      .grid { stroke: rgba(255,255,255,0.06); stroke-width: 1; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .mark { fill: rgba(255,255,255,0.92); font-weight: 900; font-size: 260px; }
+      .title { fill: rgba(255,255,255,0.82); font-weight: 800; font-size: 56px; letter-spacing: 1px; }
+      .sub { fill: rgba(255,255,255,0.55); font-weight: 700; font-size: 26px; letter-spacing: 6px; }
+      .hint { fill: rgba(255,255,255,0.25); font-size: 20px; }
+    </style>
+  </defs>
 
-<rect x="200" y="150" width="800" height="330" stroke="#A378F2" stroke-width="2" opacity="0.2"/>
-<text x="600" y="315" fill="#A378F2" font-family="monospace" font-weight="bold" font-size="80" text-anchor="middle">CARRIE</text>
-<text x="600" y="400" fill="#A378F2" font-family="monospace" font-size="30" text-anchor="middle">THE SCRIBE</text>
+  <rect class="bg" x="0" y="0" width="1200" height="630" rx="32"/>
+
+  <!-- subtle grid -->
+  <g>
+    <line class="grid" x1="100" y1="130" x2="1100" y2="130"/>
+    <line class="grid" x1="100" y1="260" x2="1100" y2="260"/>
+    <line class="grid" x1="100" y1="390" x2="1100" y2="390"/>
+    <line class="grid" x1="100" y1="520" x2="1100" y2="520"/>
+
+    <line class="grid" x1="260" y1="80" x2="260" y2="580"/>
+    <line class="grid" x1="520" y1="80" x2="520" y2="580"/>
+    <line class="grid" x1="780" y1="80" x2="780" y2="580"/>
+    <line class="grid" x1="1040" y1="80" x2="1040" y2="580"/>
+  </g>
+
+  <rect class="stroke" x="40" y="40" width="1120" height="550" rx="24" fill="none"/>
+
+  <!-- philographic avatar -->
+  <text class="mono mark" x="260" y="400" text-anchor="middle">C</text>
+
+  <text class="mono title" x="520" y="250">Carrie</text>
+  <text class="mono sub" x="520" y="298">THE SCRIBE</text>
+
+  <text class="mono hint" x="520" y="360">philographic placeholder</text>
+  <text class="mono hint" x="520" y="392">(replace with portrait later)</text>
 </svg>
