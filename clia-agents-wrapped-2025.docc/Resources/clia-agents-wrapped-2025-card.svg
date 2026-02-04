@@ -1,27 +1,51 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg { fill: #0b1020; }
+      .grid { stroke: rgba(255,255,255,0.08); stroke-width: 1; }
+      .muted { fill: rgba(255,255,255,0.22); font: 22px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .fig { fill: #ff6a00; font: 78px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 800; }
+      .title { fill: rgba(255,255,255,0.82); font: 44px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 700; letter-spacing: 2px; }
+      .tag { fill: rgba(255,255,255,0.10); stroke: rgba(255,255,255,0.18); stroke-width: 1; }
+    </style>
+  </defs>
 
-<!-- Background Pattern -->
-<text x="50" y="100" fill="#333" font-family="monospace" font-size="24" opacity="0.3">$ sync</text>
-<text x="900" y="200" fill="#333" font-family="monospace" font-size="24" opacity="0.3">{ "role": "codex" }</text>
-<text x="100" y="500" fill="#333" font-family="monospace" font-size="24" opacity="0.3">Triad.Normalize</text>
-<text x="800" y="550" fill="#333" font-family="monospace" font-size="24" opacity="0.3">CommonShell</text>
+  <rect class="bg" x="0" y="0" width="1200" height="630" rx="32"/>
 
-<!-- Main Text -->
-<text x="600" y="300" fill="#FFFFFF" font-family="monospace" font-weight="bold" font-size="120" text-anchor="middle">CLIA</text>
-<text x="600" y="420" fill="url(#grad1)" font-family="monospace" font-weight="bold" font-size="60" text-anchor="middle">2025 WRAPPED</text>
+  <!-- subtle grid -->
+  <g opacity="1">
+    <line class="grid" x1="80" y1="110" x2="1120" y2="110"/>
+    <line class="grid" x1="80" y1="220" x2="1120" y2="220"/>
+    <line class="grid" x1="80" y1="330" x2="1120" y2="330"/>
+    <line class="grid" x1="80" y1="440" x2="1120" y2="440"/>
+    <line class="grid" x1="80" y1="550" x2="1120" y2="550"/>
 
-<!-- Decor -->
-<path d="M100 315 H1100" stroke="#333" stroke-width="2"/>
-<circle cx="600" cy="315" r="250" stroke="url(#grad2)" stroke-width="4" stroke-dasharray="20 20"/>
+    <line class="grid" x1="140" y1="70" x2="140" y2="590"/>
+    <line class="grid" x1="320" y1="70" x2="320" y2="590"/>
+    <line class="grid" x1="500" y1="70" x2="500" y2="590"/>
+    <line class="grid" x1="680" y1="70" x2="680" y2="590"/>
+    <line class="grid" x1="860" y1="70" x2="860" y2="590"/>
+    <line class="grid" x1="1040" y1="70" x2="1040" y2="590"/>
+  </g>
 
-<defs>
-<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-<stop offset="0%" style="stop-color:#89F94F;stop-opacity:1" />
-<stop offset="100%" style="stop-color:#A378F2;stop-opacity:1" />
-</linearGradient>
-<linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" style="stop-color:#FFFC67;stop-opacity:1" />
-<stop offset="100%" style="stop-color:#FF8EC6;stop-opacity:1" />
-</linearGradient>
-</defs>
+  <!-- background noise text -->
+  <text class="muted" x="96" y="98">$ sync</text>
+  <text class="muted" x="900" y="170">Triad.Normalize</text>
+  <text class="muted" x="106" y="590">S-Type: deliberate</text>
+
+  <!-- figlet-ish CLIA -->
+  <text class="fig" x="110" y="250">
+    <tspan x="110" dy="0">  ____ _     ___    _</tspan>
+    <tspan x="110" dy="92"> / ___| |   |_ _|  / \\</tspan>
+    <tspan x="110" dy="92">| |   | |    | |  / _ \\</tspan>
+    <tspan x="110" dy="92">| |___| |___ | | / ___ \\</tspan>
+    <tspan x="110" dy="92"> \\____|_____|___/_/   \\_\\</tspan>
+  </text>
+
+  <!-- subtitle tag -->
+  <g transform="translate(760,430)">
+    <rect class="tag" x="0" y="0" width="360" height="86" rx="18"/>
+    <text class="title" x="20" y="54">2025 WRAPPED</text>
+  </g>
 </svg>

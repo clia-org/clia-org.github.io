@@ -14,6 +14,7 @@ Built on the broader ecosystem: [Swift Universal](https://swift-universal.github
 
 @Metadata {
     @TechnologyRoot
+    @PageColor(orange)
     @PageImage(purpose: icon, source: "clia-agents-wrapped-2025-icon.svg")
     @PageImage(purpose: card, source: "clia-agents-wrapped-2025-card.svg")
 }
