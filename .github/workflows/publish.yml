@@ -41,10 +41,22 @@ jobs:
             --transform-for-static-hosting \
             --hosting-base-path /
 
+          # Build CLIA 2025 Wrapped into a temporary site directory, then merge only
+          # the wrapped-specific output into the primary site.
+          wrapped_root="${GITHUB_WORKSPACE}/_wrapped_site"
+          rm -rf "${wrapped_root}"
+          mkdir -p "${wrapped_root}"
+
           docc convert "clia-agents-wrapped-2025.docc" \
-            --output-path "${output_root}" \
+            --output-path "${wrapped_root}" \
             --transform-for-static-hosting \
             --hosting-base-path /
+
+          # Merge wrapped-only artifacts without overwriting the primary site's
+          # global documentation index (`/documentation/index/`) and root data.
+          rsync -a --delete "${wrapped_root}/documentation/clia-2025-wrapped/" "${output_root}/documentation/clia-2025-wrapped/"
+          rsync -a --delete "${wrapped_root}/data/documentation/clia-2025-wrapped/" "${output_root}/data/documentation/clia-2025-wrapped/" || true
+          rsync -a --delete "${wrapped_root}/images/me.rismay.clia.wrapped.2025/" "${output_root}/images/me.rismay.clia.wrapped.2025/" || true
 
           # DocC currently does not emit an index.html at /documentation/<bundle>/
           # so GitHub Pages will 404 on the directory. Add a tiny redirect landing page.
