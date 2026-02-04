@@ -28,6 +28,16 @@ CLIA (Command Line Interface Agent) is a platform for building, managing, and co
 - **Triads**: Governance and agency modeling for agent ecosystems.
 - **Workflow**: Automated build and deployment pipelines.
 
+### CLIA Org Libraries
+
+- **CLIACoreModels**: Shared data models used across CLIA tools.
+- **CLIACore**: Core CLIA domain logic and utilities.
+- **CLIAAgentCore**: Core agent runtime components.
+- **CLIAAgentCoreCLICommands**: Reusable CLI subcommand implementations for agent operations.
+- **CLIAIncidentCoreCommands**: Incident creation/triage command set.
+- **CLIAIncidentResolutionCommands**: Incident resolution workflows.
+- **CLIAAgentAudit**: Auditing/trace helpers for agent runs.
+
 ### OpenClaw
 
 - [openclaw-swift](../../local/openclaw-swift.docc/index.md)
