@@ -21,6 +21,10 @@ Built on the broader ecosystem: [Swift Universal](https://swift-universal.github
 
 <!-- -->
 
+## Getting Started
+
+- <doc:getting-started>
+
 ## Architecture
 
 How the system stays legible and safe while still moving fast:
@@ -101,6 +105,10 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 - <doc:key-moments-timeline>
 
 ## Topics
+
+### Getting Started
+
+- <doc:getting-started>
 
 ### Architecture
 
