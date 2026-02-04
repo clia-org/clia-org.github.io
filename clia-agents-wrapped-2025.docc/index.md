@@ -121,6 +121,14 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 
 ---
 
+## Architecture
+
+The system behind the story.
+
+- <doc:triads>
+- <doc:s-type-system>
+- <doc:key-moments-timeline>
+
 ## Topics
 
 ### Main Characters
@@ -142,6 +150,12 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 ### Stats
 
 - <doc:stats>
+
+### Architecture
+
+- <doc:triads>
+- <doc:s-type-system>
+- <doc:key-moments-timeline>
 
 ### Archives
 
