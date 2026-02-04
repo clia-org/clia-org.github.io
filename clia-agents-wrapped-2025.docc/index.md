@@ -24,6 +24,7 @@ How the system stays legible and safe while still moving fast:
 
 - <doc:triads>
 - <doc:s-type-system>
+- <doc:claw-vs-clia>
 
 ## 2025 Wrapped
 
@@ -174,6 +175,7 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 
 - <doc:triads>
 - <doc:s-type-system>
+- <doc:claw-vs-clia>
 - <doc:key-moments-timeline>
 
 ### Archives
