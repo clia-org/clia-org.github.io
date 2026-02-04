@@ -53,12 +53,12 @@
     <text class="small" x="820" y="420">Time</text>
 
     <!-- tick labels -->
-    <text class="tiny" x="0" y="410" text-anchor="middle">Nov</text>
-    <text class="tiny" x="160" y="410" text-anchor="middle">Dec</text>
-    <text class="tiny" x="320" y="410" text-anchor="middle">Jan</text>
+    <text class="tiny" x="0" y="410" text-anchor="middle">Q2 2025</text>
+    <text class="tiny" x="160" y="410" text-anchor="middle">Jul</text>
+    <text class="tiny" x="320" y="410" text-anchor="middle">Oct</text>
     <text class="tiny" x="480" y="410" text-anchor="middle">Feb 1</text>
 
-    <!-- meeting point marker (Feb 1) -->
+    <!-- meeting point marker (Feb 1, 2026) -->
     <line class="grid dash" x1="480" y1="0" x2="480" y2="380"/>
 
     <!-- curves -->
@@ -78,7 +78,7 @@
     <g transform="translate(520,56)">
       <rect class="tag" x="0" y="0" width="220" height="56" rx="12"/>
       <text class="label" x="14" y="26">Meet</text>
-      <text class="small" x="14" y="46">Feb 1</text>
+      <text class="small" x="14" y="46">Feb 1 (2026)</text>
     </g>
 
     <g transform="translate(88,26)">
