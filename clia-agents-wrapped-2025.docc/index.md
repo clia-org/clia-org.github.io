@@ -2,6 +2,8 @@
 
 Your year in the command line. From `$sync` to Schema 0.4.0, here is how you orchestrated the machine.
 
+Built on the broader ecosystem: [Swift Universal](https://swift-universal.github.io/documentation/swift-universal).
+
 @Metadata {
     @TechnologyRoot
     @PageImage(purpose: icon, source: "clia-agents-wrapped-2025-icon.svg")
