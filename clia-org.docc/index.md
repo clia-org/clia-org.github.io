@@ -28,6 +28,28 @@ CLIA (Command Line Interface Agent) is a platform for building, managing, and co
 - **Triads**: Governance and agency modeling for agent ecosystems.
 - **Workflow**: Automated build and deployment pipelines.
 
+### CLIA Architecture
+
+CLIA is designed as a layered, local-first system.
+
+- **Surface / Entry points**
+  - **`clia` executable**: the user-facing CLI that parses intent and orchestrates operations.
+- **Command sets** (reusable CLI behaviors)
+  - **CLIAAgentCoreCLICommands**: agent operations (run, inspect, manage).
+  - **CLIAIncidentCoreCommands**: incident creation and triage.
+  - **CLIAIncidentResolutionCommands**: incident resolution workflows.
+- **Core domain libraries** (portable + testable)
+  - **CLIACoreModels**: shared data models.
+  - **CLIACore**: core CLIA domain logic and utilities.
+  - **CLIAAgentCore**: agent runtime core.
+  - **CLIAAgentAudit**: auditing/trace helpers.
+- **Runtime + tooling ecosystem**
+  - process, shell, logging, filesystem, and formatting libraries from the broader ecosystem.
+
+Mental model:
+
+**User intent → `clia` CLI → command set → core libs → runtime/tooling deps → output + audit trail**
+
 ### CLIA Org Libraries
 
 - **CLIACoreModels**: Shared data models used across CLIA tools.
