@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs>
+    <style>
+      .bg { fill: #0b1020; }
+      .grid { stroke: rgba(255,255,255,0.08); stroke-width: 1; }
+      .axis { stroke: rgba(255,255,255,0.35); stroke-width: 2; }
+      .label { fill: rgba(255,255,255,0.85); font: 20px ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial; }
+      .small { fill: rgba(255,255,255,0.7); font: 16px ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial; }
+      .tiny { fill: rgba(255,255,255,0.55); font: 14px ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial; }
+      .claw { stroke: #7c5cff; stroke-width: 6; fill: none; }
+      .clia { stroke: #00d4ff; stroke-width: 6; fill: none; }
+      .dash { stroke-dasharray: 8 8; }
+      .point { fill: #ffffff; }
+      .tag { fill: rgba(255,255,255,0.12); stroke: rgba(255,255,255,0.22); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" x="0" y="0" width="1200" height="560" rx="28"/>
+
+  <!-- plot area -->
+  <g transform="translate(120,80)">
+    <!-- grid -->
+    <g>
+      <!-- vertical grid -->
+      <line class="grid" x1="0" y1="0" x2="0" y2="380"/>
+      <line class="grid" x1="160" y1="0" x2="160" y2="380"/>
+      <line class="grid" x1="320" y1="0" x2="320" y2="380"/>
+      <line class="grid" x1="480" y1="0" x2="480" y2="380"/>
+      <line class="grid" x1="640" y1="0" x2="640" y2="380"/>
+      <line class="grid" x1="800" y1="0" x2="800" y2="380"/>
+      <line class="grid" x1="960" y1="0" x2="960" y2="380"/>
+
+      <!-- horizontal grid -->
+      <line class="grid" x1="0" y1="0" x2="960" y2="0"/>
+      <line class="grid" x1="0" y1="95" x2="960" y2="95"/>
+      <line class="grid" x1="0" y1="190" x2="960" y2="190"/>
+      <line class="grid" x1="0" y1="285" x2="960" y2="285"/>
+      <line class="grid" x1="0" y1="380" x2="960" y2="380"/>
+    </g>
+
+    <!-- axes -->
+    <line class="axis" x1="0" y1="380" x2="960" y2="380"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="380"/>
+
+    <!-- y axis label -->
+    <text class="small" x="-88" y="-14">Capability</text>
+    <text class="tiny" x="-88" y="8">(visible progress)</text>
+
+    <!-- x axis label -->
+    <text class="small" x="820" y="420">Time</text>
+
+    <!-- tick labels -->
+    <text class="tiny" x="0" y="410" text-anchor="middle">Nov</text>
+    <text class="tiny" x="160" y="410" text-anchor="middle">Dec</text>
+    <text class="tiny" x="320" y="410" text-anchor="middle">Jan</text>
+    <text class="tiny" x="480" y="410" text-anchor="middle">Feb 1</text>
+
+    <!-- meeting point marker (Feb 1) -->
+    <line class="grid dash" x1="480" y1="0" x2="480" y2="380"/>
+
+    <!-- curves -->
+    <!-- OpenClaw: straight up early, then cruise -->
+    <path class="claw" d="M 0 360 L 60 80 L 480 80"/>
+
+    <!-- CLIA: slow across floor, then rise to meet -->
+    <path class="clia" d="M 0 360 L 420 360 L 480 80"/>
+
+    <!-- meeting point -->
+    <circle class="point" cx="480" cy="80" r="7"/>
+
+    <!-- annotations -->
+    <g transform="translate(520,56)">
+      <rect class="tag" x="0" y="0" width="220" height="56" rx="12"/>
+      <text class="label" x="14" y="26">Meet</text>
+      <text class="small" x="14" y="46">Feb 1</text>
+    </g>
+
+    <g transform="translate(88,26)">
+      <rect class="tag" x="0" y="0" width="240" height="70" rx="12"/>
+      <text class="label" x="14" y="28">OpenClaw</text>
+      <text class="small" x="14" y="52">"straight up"</text>
+    </g>
+
+    <g transform="translate(88,300)">
+      <rect class="tag" x="0" y="0" width="330" height="82" rx="12"/>
+      <text class="label" x="14" y="30">CLIA</text>
+      <text class="small" x="14" y="54">"slow across the floor"</text>
+      <text class="tiny" x="14" y="74">(tackle the hard problem first)</text>
+    </g>
+
+    <!-- legend -->
+    <g transform="translate(680,8)">
+      <rect class="tag" x="0" y="0" width="280" height="58" rx="12"/>
+      <line class="claw" x1="16" y1="22" x2="58" y2="22"/>
+      <text class="small" x="72" y="27">OpenClaw progress</text>
+      <line class="clia" x1="16" y1="42" x2="58" y2="42"/>
+      <text class="small" x="72" y="47">CLIA progress</text>
+    </g>
+  </g>
+
+  <!-- title -->
+  <text class="label" x="120" y="48">Development Curves: OpenClaw vs CLIA</text>
+  <text class="small" x="120" y="72" fill="rgba(255,255,255,0.7)">Two paths to the same capability — one optimized for early visible output, one optimized for the hard foundation.</text>
+</svg>
