@@ -8,6 +8,8 @@ CLIA is the command line where:
 - repos become workspaces
 - and automation becomes a governed system (not a black box)
 
+CLIA is also a **secure process execution engine** with **complete memory isolation** — so secrets never leak to tools.
+
 Built on the broader ecosystem: [Swift Universal](https://swift-universal.github.io/documentation/swift-universal).
 
 @Metadata {
@@ -22,9 +24,9 @@ Built on the broader ecosystem: [Swift Universal](https://swift-universal.github
 
 How the system stays legible and safe while still moving fast:
 
+- <doc:claw-vs-clia>
 - <doc:triads>
 - <doc:s-type-system>
-- <doc:claw-vs-clia>
 
 ## 2025 Wrapped
 
@@ -173,9 +175,9 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 
 ### Architecture
 
+- <doc:claw-vs-clia>
 - <doc:triads>
 - <doc:s-type-system>
-- <doc:claw-vs-clia>
 - <doc:key-moments-timeline>
 
 ### Archives
