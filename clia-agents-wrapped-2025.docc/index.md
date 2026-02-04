@@ -24,6 +24,7 @@ Built on the broader ecosystem: [Swift Universal](https://swift-universal.github
 
 How the system stays legible and safe while still moving fast:
 
+- <doc:scope-of-work>
 - <doc:claw-vs-clia-development>
 - <doc:claw-vs-clia>
 - <doc:triads>
@@ -113,6 +114,7 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 
 ### Architecture
 
+- <doc:scope-of-work>
 - <doc:claw-vs-clia-development>
 - <doc:claw-vs-clia>
 - <doc:triads>
