@@ -39,6 +39,7 @@ How the system stays legible and safe while still moving fast:
 
 - <doc:scope-of-work>
 - <doc:claw-vs-clia>
+- <doc:claw-meets-clia>
 - <doc:triads>
 - <doc:s-type-system>
 
