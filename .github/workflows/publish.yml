@@ -36,22 +36,18 @@ jobs:
           output_root="${GITHUB_WORKSPACE}/_site"
           rm -rf "${output_root}"
           mkdir -p "${output_root}"
-          # Build a single DocC bundle for the site.
-          # This keeps the published docs coherent (one /documentation/index/).
-          docc convert "clia-agents-wrapped-2025.docc" \
+          docc convert "index.docc" \
             --output-path "${output_root}" \
             --transform-for-static-hosting \
             --hosting-base-path /
 
-          # DocC currently does not emit an index.html at /documentation/<bundle>/
-          # so GitHub Pages will 404 on the directory. Add a tiny redirect landing page.
-          mkdir -p "${output_root}/documentation/clia-2025-wrapped"
-          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/clia-2025-wrapped/main-characters/"></head></html>' > "${output_root}/documentation/clia-2025-wrapped/index.html"
+          # Documentation index fallback (only when DocC didn't generate it).
+          if [ -f "documentation/index/index.html" ] && [ ! -f "${output_root}/documentation/index/index.html" ]; then
+            mkdir -p "${output_root}/documentation/index"
+            cp "documentation/index/index.html" "${output_root}/documentation/index/index.html"
+          fi
 
-          # Root landing should go to the documentation index.
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
-          cp "docc-overrides.css" "${output_root}/css/docc-overrides.css"
-          find "${output_root}" -name index.html -print0 | xargs -0 perl -0pi -e 'if ($_ !~ /docc-overrides\\.css/) { s#</head>#<link rel="stylesheet" href="/css/docc-overrides.css"></head># }'
           touch "${output_root}/.nojekyll"
 
       - name: Upload Pages artifact
