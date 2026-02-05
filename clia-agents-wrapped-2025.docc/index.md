@@ -1,6 +1,6 @@
 # CLIA Org
 
-A local-first, agentic operating system for software teams — designed to run as an **autonomous GitHub organization**.
+CLIA (**Command Line Intelligent Assistant**) is a local‑first, memory‑secure agent spawning engine — built to run a GitHub org like an operating system, and staffed by a roster with actual personality.
 
 CLIA is the command line where:
 
