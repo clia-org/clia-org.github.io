@@ -102,6 +102,8 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 ### Architecture
 
 - <doc:scope-of-work>
+- <doc:scale-over-time>
+- <doc:pwd-performance>
 - <doc:claw-vs-clia>
 - <doc:triads>
 - <doc:s-type-system>
