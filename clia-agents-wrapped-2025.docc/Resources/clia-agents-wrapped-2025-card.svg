@@ -5,7 +5,8 @@
       .bg { fill: #0b1020; }
       .grid { stroke: rgba(255,255,255,0.08); stroke-width: 1; }
       .muted { fill: rgba(255,255,255,0.22); font: 22px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-      .fig { fill: #ff6a00; font: 78px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 800; }
+      /* Brand: bold, forward-leaning (IRONMAN-ish). Avoids figlet rendering glitches across browsers. */
+      .brand { fill: #ff6a00; font: 168px ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial; font-weight: 900; font-style: italic; letter-spacing: 2px; }
       .title { fill: rgba(255,255,255,0.82); font: 44px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 700; letter-spacing: 2px; }
       .tag { fill: rgba(255,255,255,0.10); stroke: rgba(255,255,255,0.18); stroke-width: 1; }
     </style>
@@ -34,14 +35,10 @@
   <text class="muted" x="900" y="170">Triad.Normalize</text>
   <text class="muted" x="106" y="590">S-Type: deliberate</text>
 
-  <!-- figlet-ish CLIA -->
-  <text class="fig" x="110" y="250">
-    <tspan x="110" dy="0">  ____ _     ___    _</tspan>
-    <tspan x="110" dy="92"> / ___| |   |_ _|  / \\</tspan>
-    <tspan x="110" dy="92">| |   | |    | |  / _ \\</tspan>
-    <tspan x="110" dy="92">| |___| |___ | | / ___ \\</tspan>
-    <tspan x="110" dy="92"> \\____|_____|___/_/   \\_\\</tspan>
-  </text>
+  <!-- Brand wordmark: bold, forward leaning -->
+  <g transform="translate(110,270) skewX(-12)">
+    <text class="brand" x="0" y="0">CLIA</text>
+  </g>
 
   <!-- subtitle tag -->
   <g transform="translate(760,430)">
