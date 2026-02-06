@@ -1,5 +1,12 @@
 # Triads
 
+@Metadata {
+  @PageImage(purpose: icon, source: "index-icon", alt: "CLIA icon")
+  @PageImage(purpose: card, source: "index-card", alt: "CLIA card")
+  @PageKind(article)
+  @PageColor(blue)
+}
+
 Triads are CLIA’s **governance + execution** primitive: a small, explicit structure for describing *who* is acting, *what they’re responsible for*, and *what they’re doing next*.
 
 In practice, a Triad binds three concepts together:
