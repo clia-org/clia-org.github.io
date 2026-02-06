@@ -33,10 +33,18 @@ A workspace for agents, orchestration, and the tooling that powers CLIA.
 - <doc:wrapped-2025/overview>
 - <doc:wrapped-2025/roster>
 - <doc:wrapped-2025/stats>
+- <doc:wrapped-2025/top-100-commits>
+- <doc:wrapped-2025/the-lost-logs>
 
-## Links
+### Repos & Meta
 
-- Initiative: [clia.us](https://clia.us)
-- GitHub org: <https://github.com/clia-org>
-- .github repo: <https://github.com/clia-org/.github>
-- Docs site: <https://clia-org.github.io>
+- <doc:public-readme>
+- <doc:clia-org-github-io>
+
+## See Also
+
+- <https://clia.us>
+- <https://github.com/clia-org>
+- <https://github.com/clia-org/.github>
+- <https://clia-org.github.io>
+
