@@ -43,6 +43,6 @@ The 2026 roster shift is the “third axis”: **legible identity**. Without it,
 
 ## Related
 
-- <doc:wrapped-2025/claw-vs-clia>
-- <doc:architecture/triads>
-- <doc:architecture/s-type-system>
+- <doc:wrapped-2025-claw-vs-clia>
+- <doc:architecture-triads>
+- <doc:architecture-s-type-system>

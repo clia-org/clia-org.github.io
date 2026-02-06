@@ -23,18 +23,18 @@ A workspace for agents, orchestration, and the tooling that powers CLIA.
 
 ### Architecture
 
-- <doc:architecture/index>
-- <doc:architecture/triads>
-- <doc:architecture/s-type-system>
+- <doc:architecture-hub>
+- <doc:architecture-triads>
+- <doc:architecture-s-type-system>
 
 ### CLIA 2025 Wrapped
 
-- <doc:wrapped-2025/index>
-- <doc:wrapped-2025/overview>
-- <doc:wrapped-2025/roster>
-- <doc:wrapped-2025/stats>
-- <doc:wrapped-2025/top-100-commits>
-- <doc:wrapped-2025/the-lost-logs>
+- <doc:wrapped-2025-index>
+- <doc:wrapped-2025-overview>
+- <doc:wrapped-2025-roster>
+- <doc:wrapped-2025-stats>
+- <doc:wrapped-2025-top-100-commits>
+- <doc:wrapped-2025-the-lost-logs>
 
 ### Repos & Meta
 

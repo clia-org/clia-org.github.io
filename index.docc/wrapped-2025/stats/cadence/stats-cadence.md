@@ -6,7 +6,7 @@ Overview for cadence's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/cadence/s-type/cadence-s-type>
-- <doc:wrapped-2025/stats/cadence/s-type/cadence-chips>
-- <doc:wrapped-2025/stats/cadence/s-type/cadence-bars>
-- <doc:wrapped-2025/stats/cadence/s-type/cadence-ring>
+- <doc:cadence-s-type>
+- <doc:cadence-chips>
+- <doc:cadence-bars>
+- <doc:cadence-ring>

@@ -6,7 +6,7 @@ Overview for dott's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/dott/s-type/dott-s-type>
-- <doc:wrapped-2025/stats/dott/s-type/dott-chips>
-- <doc:wrapped-2025/stats/dott/s-type/dott-bars>
-- <doc:wrapped-2025/stats/dott/s-type/dott-ring>
+- <doc:dott-s-type>
+- <doc:dott-chips>
+- <doc:dott-bars>
+- <doc:dott-ring>

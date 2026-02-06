@@ -6,7 +6,7 @@ Overview for quill's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/quill/s-type/quill-s-type>
-- <doc:wrapped-2025/stats/quill/s-type/quill-chips>
-- <doc:wrapped-2025/stats/quill/s-type/quill-bars>
-- <doc:wrapped-2025/stats/quill/s-type/quill-ring>
+- <doc:quill-s-type>
+- <doc:quill-chips>
+- <doc:quill-bars>
+- <doc:quill-ring>

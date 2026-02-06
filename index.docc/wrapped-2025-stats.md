@@ -10,8 +10,8 @@ Detailed breakdown of agent contributions and repo activity.
 
 ### Overview
 
-- <doc:wrapped-2025/top-100-commits>
-- <doc:wrapped-2025/the-lost-logs>
+- <doc:wrapped-2025-top-100-commits>
+- <doc:wrapped-2025-the-lost-logs>
 
 ### Agent Stats
 

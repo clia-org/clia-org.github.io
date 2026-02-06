@@ -6,7 +6,7 @@ Overview for rismay's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/rismay/s-type/rismay-s-type>
-- <doc:wrapped-2025/stats/rismay/s-type/rismay-chips>
-- <doc:wrapped-2025/stats/rismay/s-type/rismay-bars>
-- <doc:wrapped-2025/stats/rismay/s-type/rismay-ring>
+- <doc:rismay-s-type>
+- <doc:rismay-chips>
+- <doc:rismay-bars>
+- <doc:rismay-ring>

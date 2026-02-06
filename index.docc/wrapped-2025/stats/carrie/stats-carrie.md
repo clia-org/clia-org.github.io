@@ -6,7 +6,7 @@ Overview for carrie's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/carrie/s-type/carrie-s-type>
-- <doc:wrapped-2025/stats/carrie/s-type/carrie-chips>
-- <doc:wrapped-2025/stats/carrie/s-type/carrie-bars>
-- <doc:wrapped-2025/stats/carrie/s-type/carrie-ring>
+- <doc:carrie-s-type>
+- <doc:carrie-chips>
+- <doc:carrie-bars>
+- <doc:carrie-ring>

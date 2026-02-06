@@ -6,7 +6,7 @@ Overview for common's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/common/s-type/common-s-type>
-- <doc:wrapped-2025/stats/common/s-type/common-chips>
-- <doc:wrapped-2025/stats/common/s-type/common-bars>
-- <doc:wrapped-2025/stats/common/s-type/common-ring>
+- <doc:common-s-type>
+- <doc:common-chips>
+- <doc:common-bars>
+- <doc:common-ring>

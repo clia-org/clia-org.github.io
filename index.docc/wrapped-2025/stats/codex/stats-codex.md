@@ -6,7 +6,7 @@ Overview for codex's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/codex/s-type/codex-s-type>
-- <doc:wrapped-2025/stats/codex/s-type/codex-chips>
-- <doc:wrapped-2025/stats/codex/s-type/codex-bars>
-- <doc:wrapped-2025/stats/codex/s-type/codex-ring>
+- <doc:codex-s-type>
+- <doc:codex-chips>
+- <doc:codex-bars>
+- <doc:codex-ring>

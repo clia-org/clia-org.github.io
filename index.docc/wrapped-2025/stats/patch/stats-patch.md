@@ -6,7 +6,7 @@ Overview for patch's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/patch/s-type/patch-s-type>
-- <doc:wrapped-2025/stats/patch/s-type/patch-chips>
-- <doc:wrapped-2025/stats/patch/s-type/patch-bars>
-- <doc:wrapped-2025/stats/patch/s-type/patch-ring>
+- <doc:patch-s-type>
+- <doc:patch-chips>
+- <doc:patch-bars>
+- <doc:patch-ring>

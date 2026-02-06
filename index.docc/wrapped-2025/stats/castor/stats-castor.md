@@ -6,7 +6,7 @@ Overview for castor's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/castor/s-type/castor-s-type>
-- <doc:wrapped-2025/stats/castor/s-type/castor-chips>
-- <doc:wrapped-2025/stats/castor/s-type/castor-bars>
-- <doc:wrapped-2025/stats/castor/s-type/castor-ring>
+- <doc:castor-s-type>
+- <doc:castor-chips>
+- <doc:castor-bars>
+- <doc:castor-ring>

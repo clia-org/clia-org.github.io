@@ -6,7 +6,7 @@ Overview for cloud's contribution mix and S-type visualizations.
 
 ### S-Type
 
-- <doc:wrapped-2025/stats/cloud/s-type/cloud-s-type>
-- <doc:wrapped-2025/stats/cloud/s-type/cloud-chips>
-- <doc:wrapped-2025/stats/cloud/s-type/cloud-bars>
-- <doc:wrapped-2025/stats/cloud/s-type/cloud-ring>
+- <doc:cloud-s-type>
+- <doc:cloud-chips>
+- <doc:cloud-bars>
+- <doc:cloud-ring>

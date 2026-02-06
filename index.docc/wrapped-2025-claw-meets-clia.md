@@ -18,8 +18,8 @@ When Claw meets CLIA, the system becomes:
 
 ## Related
 
-- <doc:wrapped-2025/claw-vs-clia-development>
-- <doc:wrapped-2025/claw-vs-clia>
-- <doc:wrapped-2025/roster>
-- <doc:architecture/triads>
-- <doc:architecture/s-type-system>
+- <doc:wrapped-2025-claw-vs-clia-development>
+- <doc:wrapped-2025-claw-vs-clia>
+- <doc:wrapped-2025-roster>
+- <doc:architecture-triads>
+- <doc:architecture-s-type-system>

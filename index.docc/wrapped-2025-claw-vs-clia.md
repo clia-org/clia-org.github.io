@@ -50,9 +50,9 @@ Typical flow:
 
 ### Claw vs CLIA
 
-- <doc:wrapped-2025/claw-vs-clia-development>
+- <doc:wrapped-2025-claw-vs-clia-development>
 
 ### CLIA Architecture
 
-- <doc:architecture/triads>
-- <doc:architecture/s-type-system>
+- <doc:architecture-triads>
+- <doc:architecture-s-type-system>

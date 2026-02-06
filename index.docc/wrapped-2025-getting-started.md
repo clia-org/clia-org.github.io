@@ -22,5 +22,5 @@ swift build
 - Run the CLI (once you know the command name):
   - `swift run clia --help`
 - Learn the primitives:
-  - <doc:architecture/triads>
-  - <doc:architecture/s-type-system>
+  - <doc:architecture-triads>
+  - <doc:architecture-s-type-system>

@@ -31,25 +31,25 @@ cd clia-agent-cli
 swift build
 ```
 
-- More: <doc:wrapped-2025/getting-started>
+- More: <doc:wrapped-2025-getting-started>
 
 ## Architecture
 
 How the system stays legible and safe while still moving fast:
 
-- <doc:wrapped-2025/scope-of-work>
-- <doc:wrapped-2025/claw-vs-clia>
-- <doc:wrapped-2025/claw-meets-clia>
-- <doc:architecture/triads>
-- <doc:architecture/s-type-system>
+- <doc:wrapped-2025-scope-of-work>
+- <doc:wrapped-2025-claw-vs-clia>
+- <doc:wrapped-2025-claw-meets-clia>
+- <doc:architecture-triads>
+- <doc:architecture-s-type-system>
 
 ## 2025 Wrapped
 
-- <doc:wrapped-2025/overview>
-- <doc:wrapped-2025/roster>
-- <doc:wrapped-2025/stats>
-- <doc:wrapped-2025/top-100-commits>
-- <doc:wrapped-2025/the-lost-logs>
+- <doc:wrapped-2025-overview>
+- <doc:wrapped-2025-roster>
+- <doc:wrapped-2025-stats>
+- <doc:wrapped-2025-top-100-commits>
+- <doc:wrapped-2025-the-lost-logs>
 
 ---
 
@@ -91,31 +91,31 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 
 ## Key Moments Timeline
 
-- <doc:wrapped-2025/key-moments-timeline>
+- <doc:wrapped-2025-key-moments-timeline>
 
 ## Topics
 
 ### Getting Started
 
-- <doc:wrapped-2025/getting-started>
+- <doc:wrapped-2025-getting-started>
 
 ### Architecture
 
-- <doc:wrapped-2025/scope-of-work>
-- <doc:wrapped-2025/scale-over-time>
-- <doc:wrapped-2025/pwd-performance>
-- <doc:wrapped-2025/claw-vs-clia>
-- <doc:architecture/triads>
-- <doc:architecture/s-type-system>
-- <doc:wrapped-2025/key-moments-timeline>
+- <doc:wrapped-2025-scope-of-work>
+- <doc:wrapped-2025-scale-over-time>
+- <doc:wrapped-2025-pwd-performance>
+- <doc:wrapped-2025-claw-vs-clia>
+- <doc:architecture-triads>
+- <doc:architecture-s-type-system>
+- <doc:wrapped-2025-key-moments-timeline>
 
 ### 2025 Wrapped
 
-- <doc:wrapped-2025/overview>
-- <doc:wrapped-2025/roster>
-- <doc:wrapped-2025/stats>
-- <doc:wrapped-2025/top-100-commits>
-- <doc:wrapped-2025/the-lost-logs>
+- <doc:wrapped-2025-overview>
+- <doc:wrapped-2025-roster>
+- <doc:wrapped-2025-stats>
+- <doc:wrapped-2025-top-100-commits>
+- <doc:wrapped-2025-the-lost-logs>
 
 ---
 
@@ -125,6 +125,6 @@ We laughed. We cried. We added a `no-op` wrapper. Good times.
 **See you in 2026.**
 
 @Links(visualStyle: list) {
-    - <doc:wrapped-2025/top-100-commits>
-    - <doc:wrapped-2025/the-lost-logs>
+    - <doc:wrapped-2025-top-100-commits>
+    - <doc:wrapped-2025-the-lost-logs>
 }
