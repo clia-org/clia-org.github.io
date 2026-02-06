@@ -54,8 +54,8 @@ jobs:
 
           # Merge wrapped artifacts without overwriting the primary site's global
           # documentation index (`/documentation/index/`) and root data.
-          rsync -a --delete "${wrapped_root}/documentation/clia-agents-wrapped-2025/" "${output_root}/documentation/clia-agents-wrapped-2025/"
-          rsync -a --delete "${wrapped_root}/data/documentation/clia-agents-wrapped-2025/" "${output_root}/data/documentation/clia-agents-wrapped-2025/" || true
+          rsync -a --delete "${wrapped_root}/documentation/clia-2025-wrapped/" "${output_root}/documentation/clia-2025-wrapped/"
+          rsync -a --delete "${wrapped_root}/data/documentation/clia-2025-wrapped/" "${output_root}/data/documentation/clia-2025-wrapped/" || true
           rsync -a --delete "${wrapped_root}/images/me.rismay.clia.wrapped.2025/" "${output_root}/images/me.rismay.clia.wrapped.2025/" || true
 
           # Documentation index fallback (only when DocC didn't generate it).
@@ -64,9 +64,10 @@ jobs:
             cp "documentation/index/index.html" "${output_root}/documentation/index/index.html"
           fi
 
-          # Stable Wrapped landing URL.
+          # DocC doesn't emit an index.html at /documentation/<bundle>/, so GitHub Pages
+          # will 404 on the directory. Add a tiny redirect landing page.
           mkdir -p "${output_root}/documentation/clia-2025-wrapped"
-          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/clia-agents-wrapped-2025/"></head></html>' > "${output_root}/documentation/clia-2025-wrapped/index.html"
+          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/clia-2025-wrapped/overview/"></head></html>' > "${output_root}/documentation/clia-2025-wrapped/index.html"
 
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
           touch "${output_root}/.nojekyll"
