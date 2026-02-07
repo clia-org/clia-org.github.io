@@ -5,6 +5,8 @@
   @PageColor(gray)
   @TechnologyRoot
   @TitleHeading("CLIA")
+  @PageImage(purpose: hero, source: "clia-install-hero.svg", alt: "CLIA hero with install instructions")
+  @PageImage(purpose: card, source: "index-card.svg", alt: "CLIA index card")
 }
 
 @Options {
@@ -12,7 +14,22 @@
   @AutomaticSeeAlso(disabled)
 }
 
-A workspace for agents, orchestration, and the tooling that powers CLIA.
+![Hero](clia-install-hero.svg)
+
+A workspace for agents, orchestration, and the tooling that powers CLIA — with an obsession for **governed autonomy** and **legible systems**.
+
+## Install
+
+```sh
+curl -fsSL https://clia.sh | sh
+```
+
+Then:
+
+```sh
+clia --help
+clia chat "hello"
+```
 
 ## Topics
 
