@@ -66,3 +66,9 @@ clia chat "hello"
 - <https://clia-org.github.io>
 - <https://clia.sh/documentation/requests/>
 
+## DocC Bundles
+
+- <doc:index>
+- <doc:clia-org>
+- <doc:requests>
+

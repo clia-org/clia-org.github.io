@@ -37,22 +37,17 @@ jobs:
           rm -rf "${output_root}"
           mkdir -p "${output_root}"
 
-          # Build all DocC catalogs into a single static hosting output.
-          # Each catalog becomes /documentation/<bundle>/.
+          # Build each DocC catalog as its own hosted bundle under /documentation/<bundle>/.
+          # This avoids redirect hacks and makes outputs deterministic.
           for catalog in *.docc; do
-            echo "::group::docc convert ${catalog}"
+            bundle="${catalog%.docc}"
+            echo "::group::docc convert ${catalog} -> /documentation/${bundle}/"
             docc convert "${catalog}" \
               --output-path "${output_root}" \
               --transform-for-static-hosting \
-              --hosting-base-path /
+              --hosting-base-path "/documentation/${bundle}"
             echo "::endgroup::"
           done
-
-          # Ensure /documentation/requests/ has an index.html (DocC sometimes emits only leaf pages).
-          if [ ! -f "${output_root}/documentation/requests/index.html" ]; then
-            mkdir -p "${output_root}/documentation/requests"
-            echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/documentation/requests/index.html"
-          fi
 
           # Root redirect
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
