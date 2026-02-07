@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <style>
+    .ink { stroke:#0A0A0A; fill:#0A0A0A; }
+    .stroke { stroke:#0A0A0A; }
+    .fill { fill:#0A0A0A; }
+    @media (prefers-color-scheme: dark) {
+      .ink { stroke:#F4F4F4; fill:#F4F4F4; }
+      .stroke { stroke:#F4F4F4; }
+      .fill { fill:#F4F4F4; }
+    }
+  </style>
+
+  <!-- Variant A: “broken terminal” but CLIA feels like a stamped label on the bezel -->
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="64" y="72" width="512" height="256" rx="26" class="stroke" stroke-width="8" opacity="0.92"/>
+    <rect x="70" y="78" width="500" height="244" rx="22" class="stroke" stroke-width="3" opacity="0.18"/>
+  </g>
+
+  <rect x="96" y="104" width="448" height="192" rx="14" fill="none" class="stroke" stroke-opacity="0.22" stroke-width="6"/>
+
+  <!-- Scanlines + dropout -->
+  <g class="fill" fill-opacity="0.06">
+    <rect x="96" y="122" width="448" height="2"/>
+    <rect x="96" y="142" width="276" height="2"/>
+    <rect x="402" y="142" width="142" height="2"/>
+    <rect x="96" y="162" width="448" height="2"/>
+    <rect x="96" y="182" width="132" height="2"/>
+    <rect x="258" y="182" width="286" height="2"/>
+    <rect x="96" y="202" width="448" height="2"/>
+    <rect x="96" y="222" width="318" height="2"/>
+    <rect x="438" y="222" width="106" height="2"/>
+    <rect x="96" y="242" width="448" height="2"/>
+    <rect x="96" y="262" width="448" height="2"/>
+  </g>
+
+  <!-- Abstract “error” blocks -->
+  <g class="fill" fill-opacity="0.38">
+    <rect x="120" y="140" width="260" height="10" rx="3"/>
+    <rect x="120" y="160" width="320" height="10" rx="3"/>
+    <rect x="120" y="180" width="210" height="10" rx="3"/>
+    <rect x="120" y="212" width="170" height="10" rx="3"/>
+  </g>
+
+  <!-- Brand bar + “label tape” with CLIA -->
+  <rect x="96" y="304" width="150" height="24" rx="8" fill="#F05138" opacity="0.95"/>
+  <rect x="252" y="304" width="84" height="24" rx="8" fill="#F05138" opacity="0.22"/>
+
+  <!-- CLIA (only allowed text) – treated like printed label -->
+  <g opacity="0.85">
+    <text x="112" y="322" font-family="SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="16" fill="#0A0A0A">CLIA</text>
+    <style>@media (prefers-color-scheme: dark){ text{ fill:#0A0A0A; } }</style>
+  </g>
+
+  <!-- Crack lines -->
+  <g fill="none" class="stroke" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.22">
+    <path d="M238 120 L280 154 L260 178 L312 210"/>
+    <path d="M312 210 L354 190 L388 216 L436 198"/>
+    <path d="M436 198 L466 232 L520 218"/>
+  </g>
+
+  <!-- Open lock -->
+  <g transform="translate(472 146)" fill="none" class="stroke" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.65">
+    <path d="M34 28 v-12 a16 16 0 0 0 -32 0"/>
+    <rect x="6" y="28" width="40" height="44" rx="10"/>
+    <path d="M26 48 v10"/>
+  </g>
+
+  <circle cx="520" cy="316" r="7" fill="#39FF14" fill-opacity="0.22"/>
+</svg>
