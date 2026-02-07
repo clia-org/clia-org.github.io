@@ -48,6 +48,12 @@ jobs:
             echo "::endgroup::"
           done
 
+          # Ensure /documentation/requests/ has an index.html (DocC sometimes emits only leaf pages).
+          if [ ! -f "${output_root}/documentation/requests/index.html" ]; then
+            mkdir -p "${output_root}/documentation/requests"
+            echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/documentation/requests/index.html"
+          fi
+
           # Root redirect
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
           touch "${output_root}/.nojekyll"
