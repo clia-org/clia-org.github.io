@@ -64,4 +64,5 @@ clia chat "hello"
 - <https://github.com/clia-org>
 - <https://github.com/clia-org/.github>
 - <https://clia-org.github.io>
+- <https://clia.sh/documentation/requests/>
 
