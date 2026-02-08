@@ -30,3 +30,20 @@ Triads sit between the CLI surface and the runtime:
 **intent → triad selection/normalization → command execution → audit trail**
 
 Triads also make collaboration easier: teams can share Agendas and Agencies while keeping Agents distinct.
+
+## Where Triads live on disk (including public/private splits)
+
+Triads are discovered under a repo’s `.clia/agents/<slug>/` directories.
+
+If a workspace is split into visibility tiers (common in org monorepos), treat **`public/`** and **`private/`** as separate roots, each with its own `.clia/agents` tree.
+
+Example layout:
+
+- `public/.clia/agents/<slug>/<slug>@public.agent.triad.json`
+- `public/.clia/agents/<slug>/<slug>@public.agency.triad.json`
+- `public/.clia/agents/<slug>/<slug>@public.agenda.triad.json`
+- `private/.clia/agents/<slug>/<slug>@private.agent.triad.json`
+- `private/.clia/agents/<slug>/<slug>@private.agency.triad.json`
+- `private/.clia/agents/<slug>/<slug>@private.agenda.triad.json`
+
+Convention: the filename `@<dirTag>` should match the root (`public` or `private`) so there’s a single, unambiguous source of truth when both exist.
