@@ -37,16 +37,24 @@ jobs:
           rm -rf "${output_root}"
           mkdir -p "${output_root}"
 
-          # Build each DocC catalog as its own hosted bundle under /documentation/<bundle>/.
-          # This avoids redirect hacks and makes outputs deterministic.
+          # Build each DocC catalog into its own temporary output, then merge into _site.
+          # DocC may overwrite output-path on each convert; merging prevents clobbering other bundles.
           for catalog in *.docc; do
             bundle="${catalog%.docc}"
+            tmpdir="${output_root}/.tmp-${bundle}"
+            rm -rf "${tmpdir}"
+            mkdir -p "${tmpdir}"
+
             echo "::group::docc convert ${catalog} -> /documentation/${bundle}/"
             docc convert "${catalog}" \
-              --output-path "${output_root}" \
+              --output-path "${tmpdir}" \
               --transform-for-static-hosting \
               --hosting-base-path "/documentation/${bundle}"
             echo "::endgroup::"
+
+            # Merge
+            cp -a "${tmpdir}/." "${output_root}/"
+            rm -rf "${tmpdir}"
           done
 
           # Root redirect
