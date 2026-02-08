@@ -45,11 +45,11 @@ jobs:
             rm -rf "${tmpdir}"
             mkdir -p "${tmpdir}"
 
-            echo "::group::docc convert ${catalog} -> /documentation/${bundle}/"
+            echo "::group::docc convert ${catalog} (hosting-base-path=/)"
             docc convert "${catalog}" \
               --output-path "${tmpdir}" \
               --transform-for-static-hosting \
-              --hosting-base-path "/documentation/${bundle}"
+              --hosting-base-path /
             echo "::endgroup::"
 
             # Merge
