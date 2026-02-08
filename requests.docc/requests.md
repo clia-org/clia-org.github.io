@@ -14,6 +14,10 @@
 
 Feature requests and proposals for CLIA tooling and workflows.
 
+> [!TIP]
+> Want to propose something or get eyes on a draft? Join the Discord:
+> **<https://discord.gg/yAufpQGP>**
+
 ## Topics
 
 ### Requests

@@ -18,6 +18,10 @@
 
 A workspace for agents, orchestration, and the tooling that powers CLIA — with an obsession for **governed autonomy** and **legible systems**.
 
+> [!TIP]
+> Join the Discord:
+> **<https://discord.gg/yAufpQGP>**
+
 ## Install
 
 ```sh
