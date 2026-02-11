@@ -38,16 +38,17 @@ jobs:
           mkdir -p "${output_root}"
 
           # Build ONLY the documentation index bundle.
+          # Use hosting-base-path=/ (wrkstrm pattern). DocC will output under /documentation/index/.
           # This avoids bundle asset clobbering + navigation bleed between multiple DocC catalogs.
           catalog="index.docc"
-          echo "::group::docc convert ${catalog} (hosting-base-path=/documentation/index)"
+          echo "::group::docc convert ${catalog} (hosting-base-path=/)"
           docc convert "${catalog}" \
             --output-path "${output_root}" \
             --transform-for-static-hosting \
-            --hosting-base-path /documentation/index
+            --hosting-base-path /
           echo "::endgroup::"
 
-          # Root redirect
+          # Root redirect to the DocC bundle.
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
           touch "${output_root}/.nojekyll"
 
