@@ -47,6 +47,24 @@ jobs:
             --hosting-base-path /documentation/index
           echo "::endgroup::"
 
+          # DocC sometimes emits shared assets at the site root (e.g. /js, /css) even when
+          # the bundle is hosted under /documentation/index. Duplicate those assets into the
+          # bundle directory so /documentation/index/js/* + /documentation/index/css/* resolve.
+          mkdir -p "${output_root}/documentation/index"
+          if [ -d "${output_root}/js" ]; then
+            mkdir -p "${output_root}/documentation/index/js"
+            cp -a "${output_root}/js/." "${output_root}/documentation/index/js/"
+          fi
+          if [ -d "${output_root}/css" ]; then
+            mkdir -p "${output_root}/documentation/index/css"
+            cp -a "${output_root}/css/." "${output_root}/documentation/index/css/"
+          fi
+          for f in favicon.ico favicon.svg; do
+            if [ -f "${output_root}/${f}" ]; then
+              cp -a "${output_root}/${f}" "${output_root}/documentation/index/${f}"
+            fi
+          done
+
           # Root redirect
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
           touch "${output_root}/.nojekyll"
