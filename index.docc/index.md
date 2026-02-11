@@ -16,24 +16,25 @@
 
 ![Hero](clia-install-hero.svg)
 
-A workspace for agents, orchestration, and the tooling that powers CLIA — with an obsession for **governed autonomy** and **legible systems**.
+CLIA is a workspace for agents + orchestration + tooling — optimized for governed autonomy and legible systems.
 
-> [!TIP]
-> Join the Discord:
-> **<https://discord.gg/yAufpQGP>**
-
-## Install
+## Install (copy/paste)
 
 ```sh
 curl -fsSL https://clia.sh | sh
 ```
 
-Then:
-
 ```sh
 clia --help
 clia chat "hello"
 ```
+
+> [!NOTE]
+> Text inside SVG images isn’t reliably selectable when embedded in DocC.
+> The install commands above are real text (copyable).
+
+> [!TIP]
+> Join the Discord: **<https://discord.gg/yAufpQGP>**
 
 ## Topics
 
