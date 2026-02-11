@@ -5,7 +5,7 @@
   @PageColor(gray)
   @TechnologyRoot
   @TitleHeading("CLIA")
-  @PageImage(purpose: hero, source: "clia-install-hero.svg", alt: "CLIA hero with install instructions")
+  @PageImage(purpose: hero, source: "clia-isometric-hero.svg", alt: "CLIA isometric neon layers")
   @PageImage(purpose: card, source: "index-card.svg", alt: "CLIA index card")
 }
 
@@ -14,7 +14,7 @@
   @AutomaticSeeAlso(disabled)
 }
 
-![Hero](clia-install-hero.svg)
+![Hero](clia-isometric-hero.svg)
 
 CLIA is a workspace for agents + orchestration + tooling — optimized for governed autonomy and legible systems.
 
