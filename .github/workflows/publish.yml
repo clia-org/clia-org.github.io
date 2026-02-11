@@ -37,18 +37,28 @@ jobs:
           rm -rf "${output_root}"
           mkdir -p "${output_root}"
 
-          # Build ONLY the documentation index bundle.
-          # This avoids bundle asset clobbering + navigation bleed between multiple DocC catalogs.
+          # Build ONLY index.docc and publish it at site-root (no /documentation/ prefix).
+          # DocC still generates under /documentation/<bundle>/; we copy the index bundle to /.
           catalog="index.docc"
-          echo "::group::docc convert ${catalog} (hosting-base-path=/documentation/index)"
+          tmpdir="${output_root}/.tmp-index"
+          rm -rf "${tmpdir}"
+          mkdir -p "${tmpdir}"
+
+          echo "::group::docc convert ${catalog} (hosting-base-path=/)"
           docc convert "${catalog}" \
-            --output-path "${output_root}" \
+            --output-path "${tmpdir}" \
             --transform-for-static-hosting \
-            --hosting-base-path /documentation/index
+            --hosting-base-path /
           echo "::endgroup::"
 
-          # Root redirect
-          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
+          # Publish the bundle at root.
+          # Copy everything DocC produced, then lift documentation/index -> /.
+          cp -a "${tmpdir}/." "${output_root}/"
+          if [ -d "${output_root}/documentation/index" ]; then
+            cp -a "${output_root}/documentation/index/." "${output_root}/"
+          fi
+
+          # Ensure Jekyll is disabled.
           touch "${output_root}/.nojekyll"
 
       - name: Upload Pages artifact
