@@ -37,26 +37,15 @@ jobs:
           rm -rf "${output_root}"
           mkdir -p "${output_root}"
 
-          # Build each DocC catalog into its own temporary output, then merge into _site.
-          # DocC may overwrite the output-path on each convert; merging prevents clobbering other bundles.
-          # Use the wrkstrm pattern: --hosting-base-path / and let DocC place bundles under /documentation/<bundle>/.
-          for catalog in *.docc; do
-            bundle="${catalog%.docc}"
-            tmpdir="${output_root}/.tmp-${bundle}"
-            rm -rf "${tmpdir}"
-            mkdir -p "${tmpdir}"
-
-            echo "::group::docc convert ${catalog} (hosting-base-path=/)"
-            docc convert "${catalog}" \
-              --output-path "${tmpdir}" \
-              --transform-for-static-hosting \
-              --hosting-base-path /
-            echo "::endgroup::"
-
-            # Merge
-            cp -a "${tmpdir}/." "${output_root}/"
-            rm -rf "${tmpdir}"
-          done
+          # Build ONLY the documentation index bundle.
+          # This avoids bundle asset clobbering + navigation bleed between multiple DocC catalogs.
+          catalog="index.docc"
+          echo "::group::docc convert ${catalog} (hosting-base-path=/documentation/index)"
+          docc convert "${catalog}" \
+            --output-path "${output_root}" \
+            --transform-for-static-hosting \
+            --hosting-base-path /documentation/index
+          echo "::endgroup::"
 
           # Root redirect
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
