@@ -45,7 +45,8 @@ jobs:
           docc convert "${catalog}" \
             --output-path "${output_root}" \
             --transform-for-static-hosting \
-            --hosting-base-path /
+            --hosting-base-path / \
+            --fallback-display-name "CLIA"
           echo "::endgroup::"
 
           # Root redirect to the DocC bundle.
