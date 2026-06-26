@@ -100,7 +100,7 @@ While we can't list all 100 here, these were the ones that changed the course of
 - **Move .wrkstrm/clia files to .clia directory (#43)** (2025-10-06) - Cristian A Monterroza
 - **Clia rename (#42)** (2025-10-06) - Cristian A Monterroza
 - **Migrate agentExpertise to focusDomains in agent triads** (2025-10-06) - Cristian A Monterroza
-- **Remove deprecated agents and update schema to v0.4.0** (2025-10-06) - Cristian A Monterroza
+- **Remove deprecated agents and update schema to v0.0.4** (2025-10-06) - Cristian A Monterroza
 - **Remove Dot and Daily Notes agents; update agendas** (2025-10-06) - Cristian A Monterroza
 - **Merge branch 'agent-doc'** (2025-10-06) - Cristian A Monterroza
 - **Update mono** (2025-10-06) - Cristian A Monterroza

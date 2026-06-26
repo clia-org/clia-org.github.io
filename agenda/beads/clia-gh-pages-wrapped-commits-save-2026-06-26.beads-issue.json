@@ -1,0 +1,18 @@
+{
+  "BeadsIssue": "0.1.0",
+  "schemaVersion": "0.1.0",
+  "id": "clia-gh-pages-wrapped-commits-save-2026-06-26",
+  "title": "Save CLIA gh-pages wrapped commits article update",
+  "status": "open",
+  "priority": 3,
+  "issueType": "task",
+  "labels": [
+    "clia-org",
+    "gh-pages",
+    "docc",
+    "codex-save-2026-06-26"
+  ],
+  "createdAt": "2026-06-26T00:00:00Z",
+  "createdBy": "ChatGPT Loom harness",
+  "description": "Component-local bead for saving the owned CLIA gh-pages DocC article update."
+}
