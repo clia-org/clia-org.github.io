@@ -1,0 +1,18 @@
+{
+  "BeadsIssue": "0.1.0",
+  "schemaVersion": "0.1.0",
+  "id": "clia-org-github-io-docc-backlog-save-2026-06-26",
+  "title": "Persist CLIA website DocC backlog",
+  "status": "done",
+  "priority": 2,
+  "issueType": "capture-receipt",
+  "labels": [
+    "clia-org.github.io",
+    "docc",
+    "spaces-universal",
+    "savepoint"
+  ],
+  "createdAt": "2026-06-26T12:06:21Z",
+  "updatedAt": "2026-06-26T12:06:21Z",
+  "summary": "Tracks a savepoint commit for existing CLIA website DocC changes under the CLIA assistant vault."
+}
