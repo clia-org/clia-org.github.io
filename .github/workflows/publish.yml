@@ -36,17 +36,21 @@ jobs:
           output_root="${GITHUB_WORKSPACE}/_site"
           rm -rf "${output_root}"
           mkdir -p "${output_root}"
-          docc convert "index.docc" \
+
+          # Build ONLY the documentation index bundle.
+          # Use hosting-base-path=/ (wrkstrm pattern). DocC will output under /documentation/index/.
+          # This avoids bundle asset clobbering + navigation bleed between multiple DocC catalogs.
+          catalog="index.docc"
+          echo "::group::docc convert ${catalog} (hosting-base-path=/)"
+          docc convert "${catalog}" \
             --output-path "${output_root}" \
             --transform-for-static-hosting \
-            --hosting-base-path /
+            --hosting-base-path / \
+            --experimental-enable-custom-templates \
+            --fallback-display-name "CLIA"
+          echo "::endgroup::"
 
-          # Documentation index fallback (only when DocC didn't generate it).
-          if [ -f "documentation/index/index.html" ] && [ ! -f "${output_root}/documentation/index/index.html" ]; then
-            mkdir -p "${output_root}/documentation/index"
-            cp "documentation/index/index.html" "${output_root}/documentation/index/index.html"
-          fi
-
+          # Root redirect to the DocC bundle.
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=/documentation/index/"></head></html>' > "${output_root}/index.html"
           touch "${output_root}/.nojekyll"
 

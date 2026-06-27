@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  clia-isometric-hero.svg
+  DocC-safe animation: CSS + SMIL-free fallback.
+  Notes:
+  - No scripts.
+  - Keep text purely decorative; real copy lives in Markdown.
+  - Uses only <text> + transforms; if a browser outlines fonts differently, it still looks ok.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" width="1600" height="620" role="img" aria-label="CLIA isometric neon layers animation">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070812"/>
+      <stop offset="1" stop-color="#02030a"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.55 0" result="g"/>
+      <feMerge>
+        <feMergeNode in="g"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      /* DocC embeds SVGs as images; CSS animations still run in most browsers. */
+      :root { --t: 5600ms; }
+
+      .grid line { stroke: #ffffff; opacity: 0.04; }
+
+      .layer {
+        font-family: ui-sans-serif, system-ui, -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+
+      /* Isometric feel: slight skew + perspective-ish scale */
+      .iso { transform-origin: 180px 330px; transform: skewX(-18deg) skewY(9deg) scale(1.00); }
+
+      /* Three layers: middle stays anchored; the others drift opposite directions. */
+      @keyframes driftBack {
+        0%   { transform: translate(-16px, 10px) scale(1.010); opacity: 0.70; }
+        50%  { transform: translate( 18px,-12px) scale(1.035); opacity: 0.88; }
+        100% { transform: translate(-16px, 10px) scale(1.010); opacity: 0.70; }
+      }
+      @keyframes driftFront {
+        0%   { transform: translate( 18px,-12px) scale(1.030); opacity: 0.62; }
+        50%  { transform: translate(-14px, 10px) scale(1.055); opacity: 0.82; }
+        100% { transform: translate( 18px,-12px) scale(1.030); opacity: 0.62; }
+      }
+      @keyframes breatheMid {
+        0%   { transform: translate(0px,0px) scale(1.020); }
+        50%  { transform: translate(0px,-2px) scale(1.045); }
+        100% { transform: translate(0px,0px) scale(1.020); }
+      }
+
+      .back   { animation: driftBack var(--t) ease-in-out infinite; filter: url(#softGlow); }
+      .front  { animation: driftFront var(--t) ease-in-out infinite; filter: url(#softGlow); }
+      .mid    { animation: breatheMid calc(var(--t) * 0.92) ease-in-out infinite; filter: url(#softGlow); }
+
+      /* Keep the whole stack “breaching” forward slightly. */
+      @keyframes breach {
+        0%   { transform: translate(0px,0px) scale(1.00); }
+        50%  { transform: translate(0px,-6px) scale(1.02); }
+        100% { transform: translate(0px,0px) scale(1.00); }
+      }
+      .stack { animation: breach calc(var(--t) * 1.15) ease-in-out infinite; }
+
+      /* Prefer reduced motion. */
+      @media (prefers-reduced-motion: reduce) {
+        .back,.front,.mid,.stack { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="620" fill="url(#bg)"/>
+
+  <!-- Subtle scanline grid -->
+  <g class="grid" aria-hidden="true">
+    <line x1="0" y1="40" x2="1600" y2="40"/>
+    <line x1="0" y1="80" x2="1600" y2="80"/>
+    <line x1="0" y1="120" x2="1600" y2="120"/>
+    <line x1="0" y1="160" x2="1600" y2="160"/>
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="240" x2="1600" y2="240"/>
+    <line x1="0" y1="280" x2="1600" y2="280"/>
+    <line x1="0" y1="320" x2="1600" y2="320"/>
+    <line x1="0" y1="360" x2="1600" y2="360"/>
+    <line x1="0" y1="400" x2="1600" y2="400"/>
+    <line x1="0" y1="440" x2="1600" y2="440"/>
+    <line x1="0" y1="480" x2="1600" y2="480"/>
+    <line x1="0" y1="520" x2="1600" y2="520"/>
+    <line x1="0" y1="560" x2="1600" y2="560"/>
+  </g>
+
+  <!-- Isometric layered wordmark -->
+  <g class="stack iso" transform="translate(120, 70)">
+    <!-- back layer -->
+    <g class="back">
+      <text class="layer" x="60" y="340" font-size="240" fill="#00e5ff" opacity="0.55">CLIA</text>
+      <text class="layer" x="60" y="340" font-size="240" fill="none" stroke="#00e5ff" stroke-width="8" opacity="0.35">CLIA</text>
+    </g>
+
+    <!-- middle layer (anchored) -->
+    <g class="mid">
+      <text class="layer" x="60" y="340" font-size="240" fill="#f6f2ff" opacity="0.92">CLIA</text>
+      <text class="layer" x="60" y="340" font-size="240" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.14">CLIA</text>
+    </g>
+
+    <!-- front layer -->
+    <g class="front">
+      <text class="layer" x="60" y="340" font-size="240" fill="#39ff14" opacity="0.38">CLIA</text>
+      <text class="layer" x="60" y="340" font-size="240" fill="none" stroke="#ff2bd6" stroke-width="10" opacity="0.26">CLIA</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<!-- DocC custom template (requires --experimental-enable-custom-templates) -->
+<script>
+  (function () {
+    const brand = 'CLIA'
+
+    function tryReplace() {
+      for (const h of document.querySelectorAll('h2')) {
+        if (h.textContent && h.textContent.trim() === 'Documentation') {
+          h.textContent = brand
+          return true
+        }
+      }
+      return false
+    }
+
+    if (tryReplace()) return
+
+    const observer = new MutationObserver(() => {
+      if (tryReplace()) observer.disconnect()
+    })
+
+    observer.observe(document.documentElement, { childList: true, subtree: true })
+    setTimeout(() => observer.disconnect(), 4000)
+  })()
+</script>

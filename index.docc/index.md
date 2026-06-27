@@ -5,6 +5,8 @@
   @PageColor(gray)
   @TechnologyRoot
   @TitleHeading("CLIA")
+  @PageImage(purpose: hero, source: "clia-isometric-hero.svg", alt: "CLIA isometric neon layers")
+  @PageImage(purpose: card, source: "index-card.svg", alt: "CLIA index card")
 }
 
 @Options {
@@ -12,7 +14,27 @@
   @AutomaticSeeAlso(disabled)
 }
 
-A workspace for agents, orchestration, and the tooling that powers CLIA.
+![Hero](clia-isometric-hero.svg)
+
+CLIA is a workspace for agents + orchestration + tooling — optimized for governed autonomy and legible systems.
+
+## Install (copy/paste)
+
+```sh
+curl -fsSL https://clia.sh | sh
+```
+
+```sh
+clia --help
+clia chat "hello"
+```
+
+> [!NOTE]
+> Text inside SVG images isn’t reliably selectable when embedded in DocC.
+> The install commands above are real text (copyable).
+
+> [!TIP]
+> Join the Discord: **<https://discord.gg/yAufpQGP>**
 
 ## Topics
 
@@ -48,3 +70,7 @@ A workspace for agents, orchestration, and the tooling that powers CLIA.
 - <https://github.com/clia-org/.github>
 - <https://clia-org.github.io>
 
+## DocC Bundles
+
+- <doc:index>
+- <doc:clia-org>

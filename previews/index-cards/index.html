@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CLIA DocC Card Variants (preview)</title>
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --panel: #131316;
+      --text: #e9e9ee;
+      --muted: #a9a9b5;
+      --stroke: rgba(255,255,255,0.10);
+      --light: #F5F5F7;
+      --dark: #1D1D1F;
+    }
+    html,body { height:100%; }
+    body {
+      margin:0;
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.4 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    header {
+      padding: 20px 18px 10px;
+      border-bottom: 1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+    }
+    h1 { margin:0 0 6px; font-size:16px; font-weight:650; }
+    p { margin:0; color: var(--muted); }
+
+    .wrap { padding: 14px 18px 28px; }
+    .grid {
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 1100px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--stroke);
+      border-radius: 12px;
+      overflow:hidden;
+    }
+    .card .title {
+      padding: 12px 12px 10px;
+      border-bottom: 1px solid var(--stroke);
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .card .title .name { font-weight:650; }
+    .card .title .desc { color: var(--muted); font-size: 12px; }
+
+    .split {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    .pane {
+      padding: 14px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:flex-start;
+      min-height: 260px;
+    }
+    .pane.light { background: var(--light); }
+    .pane.dark { background: var(--dark); }
+    .pane .label {
+      position:absolute;
+      margin: -6px 0 0 -2px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.02em;
+      background: rgba(0,0,0,0.65);
+      color: rgba(255,255,255,0.92);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    /* The trick: force prefers-color-scheme within each pane */
+    .pane.light { color-scheme: light; }
+    .pane.dark  { color-scheme: dark; }
+
+    .asset {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      display:block;
+    }
+
+    .iconRow { display:flex; gap: 14px; align-items:center; }
+    .icon {
+      width: 128px;
+      height: 128px;
+      display:block;
+    }
+
+    footer {
+      padding: 12px 18px 22px;
+      color: var(--muted);
+      border-top: 1px solid var(--stroke);
+    }
+    code { color: #d8d8ff; }
+    a { color: #b7d2ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CLIA DocC Page Cards — Variant Preview</h1>
+    <p>Each variant is rendered twice: forced <code>light</code> and forced <code>dark</code> to validate the <code>prefers-color-scheme</code> swap.</p>
+  </header>
+
+  <div class="wrap">
+    <div class="grid">
+
+      <section class="card">
+        <div class="title">
+          <div>
+            <div class="name">Card Variant A</div>
+            <div class="desc">“label-tape CLIA” + cracked/broken terminal</div>
+          </div>
+          <div class="desc"><a href="assets/index-card-vA.svg">SVG</a></div>
+        </div>
+        <div class="split">
+          <div class="pane light">
+            <div class="label">light</div>
+            <img class="asset" src="assets/index-card-vA.svg" alt="index-card variant A (light)" />
+          </div>
+          <div class="pane dark">
+            <div class="label">dark</div>
+            <img class="asset" src="assets/index-card-vA.svg" alt="index-card variant A (dark)" />
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="title">
+          <div>
+            <div class="name">Card Variant B</div>
+            <div class="desc">80s arcade feel: thick glitch band + big CLIA</div>
+          </div>
+          <div class="desc"><a href="assets/index-card-vB.svg">SVG</a></div>
+        </div>
+        <div class="split">
+          <div class="pane light">
+            <div class="label">light</div>
+            <img class="asset" src="assets/index-card-vB.svg" alt="index-card variant B (light)" />
+          </div>
+          <div class="pane dark">
+            <div class="label">dark</div>
+            <img class="asset" src="assets/index-card-vB.svg" alt="index-card variant B (dark)" />
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="title">
+          <div>
+            <div class="name">Icon Variant A</div>
+            <div class="desc">mini broken CRT (no text)</div>
+          </div>
+          <div class="desc"><a href="assets/index-icon-vA.svg">SVG</a></div>
+        </div>
+        <div class="split">
+          <div class="pane light">
+            <div class="label">light</div>
+            <div class="iconRow"><img class="icon" src="assets/index-icon-vA.svg" alt="index-icon variant A (light)" /></div>
+          </div>
+          <div class="pane dark">
+            <div class="label">dark</div>
+            <div class="iconRow"><img class="icon" src="assets/index-icon-vA.svg" alt="index-icon variant A (dark)" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="title">
+          <div>
+            <div class="name">Icon Variant B</div>
+            <div class="desc">mini glitch band (no text)</div>
+          </div>
+          <div class="desc"><a href="assets/index-icon-vB.svg">SVG</a></div>
+        </div>
+        <div class="split">
+          <div class="pane light">
+            <div class="label">light</div>
+            <div class="iconRow"><img class="icon" src="assets/index-icon-vB.svg" alt="index-icon variant B (light)" /></div>
+          </div>
+          <div class="pane dark">
+            <div class="label">dark</div>
+            <div class="iconRow"><img class="icon" src="assets/index-icon-vB.svg" alt="index-icon variant B (dark)" /></div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <div>Notes: these are preview assets only; nothing is wired into DocC yet.</div>
+  </footer>
+</body>
+</html>

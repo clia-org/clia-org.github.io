@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <style>
+    .ink-stroke { stroke: #0A0A0A; }
+    .ink-fill { fill: #0A0A0A; }
+    .muted { stroke-opacity: 0.22; fill-opacity: 0.22; }
+    @media (prefers-color-scheme: dark) {
+      .ink-stroke { stroke: #F4F4F4; }
+      .ink-fill { fill: #F4F4F4; }
+    }
+  </style>
+
+  <!-- CLIA index card: broken CRT (no text except CLIA). Background omitted. -->
+
+  <!-- Bezel: mis-registered double-stroke -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="64" y="72" width="512" height="256" rx="26" class="ink-stroke" stroke-width="8" opacity="0.85"/>
+    <rect x="68" y="76" width="504" height="248" rx="24" class="ink-stroke" stroke-width="4" opacity="0.20"/>
+  </g>
+
+  <!-- Screen -->
+  <rect x="96" y="104" width="448" height="192" rx="14" fill="none" class="ink-stroke muted" stroke-width="6"/>
+
+  <!-- Broken scanlines: uneven chunks + dropouts -->
+  <g class="ink-fill" fill-opacity="0.06">
+    <rect x="96" y="120" width="448" height="2"/>
+    <rect x="96" y="136" width="310" height="2"/>
+    <rect x="420" y="136" width="124" height="2"/>
+    <rect x="96" y="152" width="448" height="2"/>
+    <rect x="96" y="168" width="160" height="2"/>
+    <rect x="286" y="168" width="258" height="2"/>
+    <rect x="96" y="184" width="448" height="2"/>
+    <rect x="96" y="200" width="92" height="2"/>
+    <rect x="220" y="200" width="324" height="2"/>
+    <rect x="96" y="216" width="448" height="2"/>
+    <rect x="96" y="232" width="270" height="2"/>
+    <rect x="392" y="232" width="152" height="2"/>
+    <rect x="96" y="248" width="448" height="2"/>
+    <rect x="96" y="264" width="448" height="2"/>
+  </g>
+
+  <!-- Static glitch blocks (abstract text) -->
+  <g class="ink-fill" fill-opacity="0.40">
+    <rect x="120" y="138" width="250" height="10" rx="3"/>
+    <rect x="120" y="160" width="310" height="10" rx="3"/>
+    <rect x="120" y="182" width="220" height="10" rx="3"/>
+    <rect x="120" y="214" width="180" height="10" rx="3"/>
+  </g>
+  <g class="ink-fill" fill-opacity="0.16">
+    <rect x="120" y="240" width="140" height="8" rx="3"/>
+  </g>
+
+  <!-- CLIA (only allowed text) -->
+  <g class="ink-fill" opacity="0.70">
+    <text x="120" y="276" font-family="SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="18">CLIA</text>
+  </g>
+
+  <!-- Fracture lines -->
+  <g fill="none" class="ink-stroke" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.22">
+    <path d="M250 112 L286 146 L262 176 L312 206"/>
+    <path d="M312 206 L350 186 L382 214 L430 196"/>
+    <path d="M430 196 L462 228 L520 214"/>
+    <path d="M280 250 L318 224 L360 252"/>
+  </g>
+
+  <!-- Status bar: partially missing -->
+  <rect x="96" y="304" width="120" height="24" rx="8" fill="#F05138" opacity="0.95"/>
+  <rect x="188" y="304" width="28" height="24" rx="8" fill="#F05138" opacity="0.25"/>
+
+  <!-- Broken lock -->
+  <g transform="translate(472 146)" fill="none" class="ink-stroke" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.65">
+    <path d="M34 28 v-12 a16 16 0 0 0 -32 0"/>
+    <rect x="6" y="28" width="40" height="44" rx="10"/>
+    <path d="M26 48 v10"/>
+  </g>
+
+  <circle cx="520" cy="316" r="7" fill="#39FF14" fill-opacity="0.22"/>
+</svg>

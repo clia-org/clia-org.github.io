@@ -1,5 +1,12 @@
 # Getting Started
 
+@Metadata {
+  @PageImage(purpose: icon, source: "retro-terminal-icon", alt: "retro terminal icon")
+  @PageImage(purpose: card, source: "retro-terminal-card", alt: "retro terminal card")
+  @PageKind(article)
+  @PageColor(gray)
+}
+
 This site is the DocC entry point for **clia-org**.
 
 Start with the repositories list, then follow links to the org docs and Pages site.
